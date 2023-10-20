@@ -62,8 +62,9 @@ export default class SaleCar extends Component {
                 </Button>
                 {/* <button>Call Now:8742068501</button> */}
               </div>
-              <div className="col-md-7  Sec1-sale" style={{ paddingLeft: '10px' }}>
-                <img src="src\component\img\sellyourcar-banner-img.png" alt="Car image" style={{ height: "450px", width: "700px" }} />
+              <div className="col-md-7  Sec1-sale" style={{ paddingLeft: '10px'}}>
+                <img src="src\component\img\sellyourcar-banner-imgbg.jpg" alt=""  style={{  height: "500px", width: "780px",position:"absolute" }} />
+                <img src="src\component\img\sellyourcar-banner-img.png" alt="Car image" style={{ height: "450px", width: "700px",position:"relative"  }} />
 
               </div>
             </div>
@@ -74,7 +75,9 @@ export default class SaleCar extends Component {
             <div className="row">
               <h2>AUTHORIZED LUXURY CAR BUYERS IN JAIPUR</h2>
               <h2>THE AUTO MART</h2>
-              <div className="col-md-6">
+              <div className="col-md-6" style={{
+                padding:"20px"
+              }}>
                 <ul style={{
                   listStyle: "none", textAlign:
                     "left"
@@ -123,7 +126,7 @@ export default class SaleCar extends Component {
                 </ul>
               </div>
 
-              <div className="col-md-6 form-clmn">
+              <div className="col-md-6 form-clmn" style={{border:"1px solid black",padding:"30px"}}>
                 <div className="frm-grp cntctfrm-grp">
                   <div className="frm-titles">
                     <h3 className="h4 frm-title">Send us an email</h3>
@@ -132,13 +135,13 @@ export default class SaleCar extends Component {
                   {/* <div><FormGroup/></div> */}
 
                   <form>
-                    <div className=" row form-row" style={{ margin: '0px' }}>
+                    <div className=" row form-row" style={{ margin: '0px'}}>
                       <div className="form-group col-md-6" >
                         {/* <label for="inputEmail4">Email</label>
       <input type="email" className="form-control" id="inputEmail4" placeholder="Email"/> */}
-                        <TextField id="outlined-basic" label="Name" variant="outlined" type='text' required color='secondary' />
+                        <TextField id="outlined-basic" label="Name" variant="outlined" type='text' required color='secondary' fullWidth style={{ margin: '5px' }}/>
                       </div>
-                      <div className='col-md-6'> <TextField id="outlined-basic" label="Email" variant="outlined" type='email' required color='secondary' />
+                      <div className='col-md-6'> <TextField id="outlined-basic" label="Email" variant="outlined" type='email' required color='secondary' fullWidth style={{ margin: '5px' }}/>
                       </div>
                       <div className="form-group col-md-6">
                         {/* <label for="inputPassword4">Password</label>
@@ -151,10 +154,10 @@ export default class SaleCar extends Component {
                       <div className="form-group col-md-6" style={{ margin: '5px' }}>
                         {/* <label for="inputCity">City</label> */}
                         {/* <input type="text" className="form-control" id="inputCity"/> */}
-                        <TextField id="outlined-basic" label="Location" variant="outlined" color='secondary' />
+                        <TextField id="outlined-basic" label="Location" variant="outlined" color='secondary' fullWidth />
                       </div>
                       <div>
-                        <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
+                        <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }}fullWidth />
 
                       </div>
                     </div>

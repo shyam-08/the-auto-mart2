@@ -34,9 +34,9 @@ function App() {
       {/* <Home/> */}
       {/* <AboutUs /> */}
       {/* <ContactUs/>  */}
-      {/* <AboutTam/> */}
+   
       {/* <Insurance/> */}
-      {/* <WhyUs /> */}
+      <WhyUs />
       {/* <TamSquad/> */}
       {/* <Faq/> */}
       {/* <Career/> */}
@@ -48,12 +48,13 @@ function App() {
       {/* <FinanceCar/> */}
 
       {/* other component  */}
+      {/* <AboutTam/> */}
       {/* <Navbar/> */}
       {/* <Footer/>       */}
       {/* <Card/> */}
       {/* <SellingCar/> */}
       {/* <BasicTabs/> */}
-      <BasicTabs2/>
+      {/* <BasicTabs2/> */}
       {/* <InsuranceTab/> */}
       {/* <SwipeableTextMobileStepper/> */}
     </>

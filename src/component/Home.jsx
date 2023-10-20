@@ -5,7 +5,7 @@ import "./About.css";
 import QueryBuilderOutlinedIcon from '@mui/icons-material/QueryBuilderOutlined';
 import { Card } from '@mui/material';
 import SwipeableTextMobileStepper from './SwipeableTextMobileStepper';
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 export default function Home() {
@@ -29,7 +29,10 @@ export default function Home() {
                     {/* <h6>Wellcome...we try to give you best experience</h6>  */}
                 </div>
             </div>
-            <div className='section-2Home' >
+            <motion.div className='section-2Home' 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            >
                 <div className="container">
 
                     <div className='row'>
@@ -40,13 +43,18 @@ export default function Home() {
                             <div className="row" style={{
                                 padding: '20px'
                             }}>
-                                <div className="col md 3"><span>
+                                <motion.div className="col md 3"
+                                transition={{
+                                    ease: "linear",
+                                    duration: 2,
+                                    x: { duration: 2 }
+                                  }}><span>
                                     <img src="src\component\img\outrightsell-icon.png" alt="outrightsell" style={{
                                         padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "40px", width: "40px"
                                     }} />
                                     Best Offer</span>
                                     <span><strong> Sale</strong></span>
-                                </div>
+                                </motion.div>
                                 <div className="col md 3"><span>
 
                                     <img src="src\component\img\clock-icon.png" alt="clock-icon" style={{
@@ -80,8 +88,10 @@ export default function Home() {
                     </div>
 
                 </div>
-            </div>
-            <div className='section-3Home'>
+            </motion.div>
+            <motion.div className='section-3Home'
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}>
                 <div>
                     <h3>HOW IT WORKS </h3>
                     <p>
@@ -111,7 +121,7 @@ export default function Home() {
                         <hr />
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div className='Secton-5Home' style={{textAlign:"center", padding:"20px"}}>
                 <div>
                    <h2>POPULAR @</h2>
@@ -121,11 +131,13 @@ export default function Home() {
                    </div>
                 </div>
             </div>
-            <div className='secton-4Home'>
+            <motion.div className='secton-4Home'
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}>
                 <div>
                     <Footer />
                 </div>
-            </div>
+            </motion.div>
         </div >
     )
 }
