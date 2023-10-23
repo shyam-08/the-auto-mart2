@@ -25,6 +25,7 @@ import SwipeableTextMobileStepper from './component/SwipeableTextMobileStepper'
 import BasicTabs from './component/BasicTabs'
 import BasicTabs2 from './component/BasicTabs2'
 import InsuranceTab from './component/InsuranceTab'
+import MultipleSelectPlaceholder from './component/MultipleSelectPlaceholder'
 
 
 function App() {
@@ -36,16 +37,17 @@ function App() {
       {/* <ContactUs/>  */}
    
       {/* <Insurance/> */}
-      <WhyUs />
+      {/* <WhyUs /> */}
       {/* <TamSquad/> */}
       {/* <Faq/> */}
       {/* <Career/> */}
-      {/* <UsedCar/> */}
+      <UsedCar/>
       {/* <EmiCalculator/> */}
       {/* <SaleCar/> */}
       {/* <CompareCars/> */}
       {/* <BuyingCar/> */}
       {/* <FinanceCar/> */}
+      {/* <MultipleSelectPlaceholder/> */}
 
       {/* other component  */}
       {/* <AboutTam/> */}

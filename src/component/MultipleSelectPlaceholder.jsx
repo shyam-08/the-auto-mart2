@@ -30,24 +30,24 @@ const names = [
   'MAHINDRA',
 ];
 
-function getStyles(name , CarBrand, theme) {
+function getStyles(name, personName, theme) {
   return {
     fontWeight:
-      CarBrand.indexOf === -1
+      personName.indexOf(name) === -1
         ? theme.typography.fontWeightRegular
         : theme.typography.fontWeightMedium,
   };
 }
 
-export default function CarBrand() {
+export default function MultipleSelectPlaceholder() {
   const theme = useTheme();
-  const [carBrand, setCarBrand] = React.useState([]);
+  const [personName, setPersonName] = React.useState([]);
 
   const handleChange = (event) => {
     const {
       target: { value },
     } = event;
-    setCarBrand(
+    setPersonName(
       // On autofill we get a stringified value.
       typeof value === 'string' ? value.split(',') : value,
     );
@@ -59,7 +59,7 @@ export default function CarBrand() {
         <Select
           multiple
           displayEmpty
-          value={CarBrand}
+          value={personName}
           onChange={handleChange}
           input={<OutlinedInput />}
           renderValue={(selected) => {
@@ -79,7 +79,7 @@ export default function CarBrand() {
             <MenuItem
               key={name}
               value={name}
-              style={getStyles(name, CarBrand, theme)}
+              style={getStyles(name, personName, theme)}
             >
               {name}
             </MenuItem>
