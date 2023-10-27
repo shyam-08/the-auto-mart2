@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ContactUs from './ContactUs'
 export default class Navbar extends Component {
   render() {
     return (
@@ -66,7 +67,8 @@ export default class Navbar extends Component {
               <a className="dropdown-item" href=".\AboutUs.jsx">AboutUs</a>
             </li>
             <li>
-              <a className="dropdown-item" href=".\ContactUs.jsx">contact Us</a>
+              {/* <a className="dropdown-item" href=".\ContactUs.jsx">navigate(.\ContactUs)</a> */}
+              <ContactUs/>
             </li>
             <li><hr className="dropdown-divider" /></li>
            

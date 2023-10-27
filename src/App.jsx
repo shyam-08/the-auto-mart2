@@ -1,5 +1,6 @@
 import { useState } from 'react'
-// import { motion } from "framer-motion"
+import { motion } from "framer-motion"
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import './App.css'
 import AboutUs from './component/AboutUs'
@@ -32,7 +33,7 @@ function App() {
   return (
     <>
       {/* main component  */}
-      {/* <Home/> */}
+      <Home/>
       {/* <AboutUs /> */}
       {/* <ContactUs/>  */}
    
@@ -41,13 +42,31 @@ function App() {
       {/* <TamSquad/> */}
       {/* <Faq/> */}
       {/* <Career/> */}
-      <UsedCar/>
+      {/* <UsedCar/> */}
       {/* <EmiCalculator/> */}
       {/* <SaleCar/> */}
       {/* <CompareCars/> */}
       {/* <BuyingCar/> */}
       {/* <FinanceCar/> */}
       {/* <MultipleSelectPlaceholder/> */}
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          {/* <Route path='/SignIn' element={<SignIn />} /> */}
+          {/* <Route path='/SignUp' element={<SignUp />} /> */}
+          {/* <Route path='/TamSquad' element={<TamSquad/> } />
+          <Route path='/WhyUs' element={<AboutUs />} />
+          <Route path='/ContactUs' element={<ContactUs/>} />
+          <Route path='/Insurance' element={<Insurance/>} />
+          <Route path='/<Faq' element={<Faq/> } />
+          <Route path='/Career' element={<Career/>} />
+          <Route path='/UsedCar' element={ <UsedCar/>} />
+          <Route path='/EmiCalculator' element={ <EmiCalculator/>} />
+          <Route path='/SaleCar' element={<SaleCar/>} />
+          <Route path='/CompareCars' element={<CompareCars/>} />
+ */}
+        {/* </Routes> */}
+      {/* </BrowserRouter> */} 
 
       {/* other component  */}
       {/* <AboutTam/> */}

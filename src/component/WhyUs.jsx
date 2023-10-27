@@ -97,7 +97,7 @@ export default class WhyUs extends Component {
 
           {/* </div> */}
         </div>
-        <div className='section-5' style={{ padding: "40px", textAlign: "justify", width: "100%" ,textAlign:"center"}}>
+        <div className='section-5' style={{ padding: "40px", width: "100%" ,textAlign:"center"}}>
           <div className="container">
             <h2>BEST CAR INSPECTION</h2>
               <h2>TEAM IN JAIPUR</h2>
