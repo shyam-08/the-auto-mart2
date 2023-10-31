@@ -30,7 +30,7 @@ export default class TamSquad extends Component {
               <h2>WHAT IS TAM SQUAD?</h2>
               <p>TAM Squad is a new platform inviting car enthusiasts to pursue their passion for automobiles without compromising on their existing work areas. You can exploit the opportunity of earning by procuring cars for us. It is possible to do this, by centralizing your independent freelance relationships, collaborating, quoting prices and using the TAM brand to take you to the next level.
 
-                You can grow with us by expanding your existing freelance and agency relationships by working across PAN India, furthermore to improve accessibility one can firm their presence on various social media platforms on behalf of us. Our target is to simplify processing to succeed in the untapped market by making a physical presence active through the TAM Squad who keeps alive the immediate response system with our customers for hassle free selling of exotic cars to TAM in only 29 minutes. Every member of the BBT Squad will have a fanatical 24*7 Relationship Manager to help you throughout the process.</p>
+                You can grow with us by expanding your existing freelance and agency relationships by working across PAN India, furthermore to improve accessibility one can firm their presence on various social media platforms on behalf of us. Our target is to simplify processing to succeed in the untapped market by making a physical presence active through the TAM Squad who keeps alive the immediate response system with our customers for hassle free selling of exotic cars to TAM in only 29 minutes. Every member of the TAM Squad will have a fanatical 24*7 Relationship Manager to help you throughout the process.</p>
             </div>
           </div>
           <div className="Section-4Squad">
@@ -124,16 +124,16 @@ export default class TamSquad extends Component {
               <div className="row" style={{padding:"20px"}}>
 
                 <div className="col-md-3">
-                  <img src="src\component\img\benefit-bbtsquad-icon.png" alt="" className='Section-5Squad-Icon' />
+                  <img src="src\component\img\benefit-TAMsquad-icon.png" alt="" className='Section-5Squad-Icon' />
                   <h6>
 
-                    Be a part of the BBT Family
+                    Be a part of the TAM Family
                   </h6>
 
                 </div>
                 <div className="col-md-3">
                   <img src="src\component\img\benefit-support-icon.png" alt="" className='Section-5Squad-Icon'  />
-                  <h6>Support by BBT Professionals</h6>
+                  <h6>Support by TAM Professionals</h6>
                 </div>
 
 

@@ -9,24 +9,24 @@ export default class AboutTam extends Component {
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Are We Allowed To Take Pictures & Videos In The Big Boy Toyz Premises For Vlog Purpose Or For Social Media?
+                Are We Allowed To Take Pictures & Videos In The the auto mart Premises For Vlog Purpose Or For Social Media?
                 -
               </button>
             </h2>
             <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body">Capturing pictures and videos from your personal cellphone or an Ipad is permitted. Professional shooting equipment's, professional cameras and video vlogging are not permitted. However, we at BBT have our dedicated media day on every Saturday in which you can first seek permission through email by our marketing team and then come and display your photography skills.</div>
+              <div className="accordion-body">Capturing pictures and videos from your personal cellphone or an Ipad is permitted. Professional shooting equipment's, professional cameras and video vlogging are not permitted. However, we at TAM have our dedicated media day on every Saturday in which you can first seek permission through email by our marketing team and then come and display your photography skills.</div>
             </div>
           </div>
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                How Different Is The Experience Of Buying Pre-Used Cars From BBT Compared To Company Certified Pre Used Cars Dealerships?
+                How Different Is The Experience Of Buying Pre-Used Cars From TAM Compared To Company Certified Pre Used Cars Dealerships?
                 -
 
               </button>
             </h2>
             <div id="flush-collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body">We at BBT do our best in being as versatile as we can, this shows by our ground breaking policies (explained under a different FAQ) and the array of options on offer. In a company owned pre used dealership you are restricted to one brand, having to compare the cars side by side with other brands and models is a task as it is time consuming for you to move around showrooms trying to find the best suitable option. We are a one stop shop where you can compare cars from all the luxury car brands which are on offer under one roof. For Example :- Mercedes Benz S class vs BMW 730ld vs Audi A8 vs Maserati Quattro Porte, you can physically sit and feel each car individually to have a clear and a better understanding as to which one is tailor made for your comfort and style, where else do you have this ease of buying?</div>
+              <div className="accordion-body">We at TAM do our best in being as versatile as we can, this shows by our ground breaking policies (explained under a different FAQ) and the array of options on offer. In a company owned pre used dealership you are restricted to one brand, having to compare the cars side by side with other brands and models is a task as it is time consuming for you to move around showrooms trying to find the best suitable option. We are a one stop shop where you can compare cars from all the luxury car brands which are on offer under one roof. For Example :- Mercedes Benz S class vs BMW 730ld vs Audi A8 vs Maserati Quattro Porte, you can physically sit and feel each car individually to have a clear and a better understanding as to which one is tailor made for your comfort and style, where else do you have this ease of buying?</div>
             </div>
           </div>
           <div className="accordion-item">
@@ -62,7 +62,7 @@ export default class AboutTam extends Component {
               </button>
             </h2>
             <div id="flush-collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body">We at BBT have a dedicated workshop and after sales team who are ready to source you any part from anywhere in the world. We have a strong network with all the company owned workshops and factories all across the world. Once you buy a car from us, there is no need to venture out trying to find a particular part or item, we are there for you!</div>
+              <div className="accordion-body">We at TAM have a dedicated workshop and after sales team who are ready to source you any part from anywhere in the world. We have a strong network with all the company owned workshops and factories all across the world. Once you buy a car from us, there is no need to venture out trying to find a particular part or item, we are there for you!</div>
             </div>
           </div>
           <div className="accordion-item">
@@ -80,7 +80,7 @@ export default class AboutTam extends Component {
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                Do You Have An App For BBT? If No, Are You Guys Planning To Work On It?
+                Do You Have An App For TAM? If No, Are You Guys Planning To Work On It?
                 -
 
               </button>
@@ -146,12 +146,12 @@ export default class AboutTam extends Component {
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTweleve" aria-expanded="false" aria-controls="flush-collapseTweleve">
-                Does BBT Own The Cars Shown Online Or Are They Owned By The Other Individuals / Dealers?
+                Does TAM Own The Cars Shown Online Or Are They Owned By The Other Individuals / Dealers?
                 -
               </button>
             </h2>
             <div id="flush-collapseTweleve" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body">BBT owns every car that are sold as we don't work on park and sell facility. Complete stock which is listed on the website are 100% procured and will be physically available at our showrooms located Pan India.</div>
+              <div className="accordion-body">TAM owns every car that are sold as we don't work on park and sell facility. Complete stock which is listed on the website are 100% procured and will be physically available at our showrooms located Pan India.</div>
             </div>
           </div>
 

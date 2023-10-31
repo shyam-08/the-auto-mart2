@@ -25,7 +25,7 @@ export default function Career() {
             <h1>A COMPANY WITH A</h1>
             <h1>VISION</h1>
     <p>Our Vision is to grow along with the team to be Number one luxury car dealers in India</p>
-        <span>BBT believes that its future depends on its people who are capable enough to generate new ideas & plans that altogether will help in talking the business to a new height.</span>
+        <span>TAM believes that its future depends on its people who are capable enough to generate new ideas & plans that altogether will help in talking the business to a new height.</span>
         </div>
       </div>
       <div className="Section-3Career" >

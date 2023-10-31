@@ -4,8 +4,9 @@ import Footer from './Footer'
 import "./About.css";
 import QueryBuilderOutlinedIcon from '@mui/icons-material/QueryBuilderOutlined';
 import { Card } from '@mui/material';
-import SwipeableTextMobileStepper from './SwipeableTextMobileStepper';
+// import SwipeableTextMobileStepper from './SwipeableTextMobileStepper';
 import { motion } from "framer-motion";
+// import ParallaxCarousel from './ParallaxCarousel';
 
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
                                     x: { duration: 2 }
                                   }}><span>
                                     <img src="src\component\img\outrightsell-icon.png" alt="outrightsell" style={{
-                                        padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "40px", width: "40px"
+                                        padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "50px", width: "50px"
                                     }} />
                                     Best Offer</span>
                                     <span><strong> Sale</strong></span>
@@ -58,7 +59,7 @@ export default function Home() {
                                 <div className="col md 3"><span>
 
                                     <img src="src\component\img\clock-icon.png" alt="clock-icon" style={{
-                                        padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "40px", width: "40px"
+                                        padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "50px", width: "50px"
                                     }} /> Best Offer
 
                                     <strong> in 29 Minutes</strong></span></div></div>
@@ -67,13 +68,13 @@ export default function Home() {
                             }}>
                                 <div className="col md 3"><span>
                                     <img src="src\component\img\men-icon1.png" alt="men-icon1" style={{
-                                        padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "40px", width: "40px"
+                                        padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "50px", width: "50px"
                                     }} />
                                     7600+ Satisfied
                                     <strong> Customers</strong></span></div>
                                 <div className="col md 3"><span>
                                     <img src="src\component\img\hasslefree-icon1.png" alt="hasslefree-icon1" style={{
-                                        padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "40px", width: "40px"
+                                        padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "50px", width: "50px"
                                     }} />
 
 
@@ -126,8 +127,9 @@ export default function Home() {
                 <div>
                    <h2>POPULAR @</h2>
                    <h2>THE AUTO MART</h2>
-                   <div>
-                  <SwipeableTextMobileStepper style={{textItem:"center", padding:"20px", width:"800px"}}/>
+                   <div style={{padding:"80px"}}>
+                  {/* <SwipeableTextMobileStepper style={{textItem:"center", padding:"20px", width:"800px"}}/> */}
+                  {/* <ParallaxCarousel/> */}
                    </div>
                 </div>
             </div>

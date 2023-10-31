@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import { motion } from "framer-motion"
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter,
+   Routes,
+
+   Link,
+  Route
+} from 'react-router-dom';
 
 import './App.css'
 import AboutUs from './component/AboutUs'
@@ -27,16 +32,19 @@ import BasicTabs from './component/BasicTabs'
 import BasicTabs2 from './component/BasicTabs2'
 import InsuranceTab from './component/InsuranceTab'
 import MultipleSelectPlaceholder from './component/MultipleSelectPlaceholder'
+import ParallaxCarousel from './component/ParallaxCarousel';
+import { Navigate } from "react-router-dom";
 
 
 function App() {
   return (
     <>
       {/* main component  */}
-      <Home/>
+      {/* <Home/> */}
       {/* <AboutUs /> */}
-      {/* <ContactUs/>  */}
-   
+      {/* <ContactUs/> 
+    */}
+    {/* <ParallaxCarousel/> */}
       {/* <Insurance/> */}
       {/* <WhyUs /> */}
       {/* <TamSquad/> */}
@@ -49,24 +57,24 @@ function App() {
       {/* <BuyingCar/> */}
       {/* <FinanceCar/> */}
       {/* <MultipleSelectPlaceholder/> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
+      
         <Routes>
-          <Route path='/' element={<Home />} />
-          {/* <Route path='/SignIn' element={<SignIn />} /> */}
-          {/* <Route path='/SignUp' element={<SignUp />} /> */}
-          {/* <Route path='/TamSquad' element={<TamSquad/> } />
-          <Route path='/WhyUs' element={<AboutUs />} />
+          <Route path='/' exact       element={<Home />} />
+            <Route path='/TamSquad' element={<TamSquad/> } /> 
+          <Route path='/AboutUs' element={<AboutUs />} />
+          <Route path='/WhyUs' element={<WhyUs />} />
           <Route path='/ContactUs' element={<ContactUs/>} />
           <Route path='/Insurance' element={<Insurance/>} />
-          <Route path='/<Faq' element={<Faq/> } />
+          <Route path='/Faq' element={<Faq/>} />
           <Route path='/Career' element={<Career/>} />
           <Route path='/UsedCar' element={ <UsedCar/>} />
           <Route path='/EmiCalculator' element={ <EmiCalculator/>} />
           <Route path='/SaleCar' element={<SaleCar/>} />
           <Route path='/CompareCars' element={<CompareCars/>} />
- */}
-        {/* </Routes> */}
-      {/* </BrowserRouter> */} 
+
+        </Routes>
+     </BrowserRouter>   
 
       {/* other component  */}
       {/* <AboutTam/> */}
