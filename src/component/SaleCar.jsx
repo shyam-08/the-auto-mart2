@@ -11,6 +11,8 @@ import { InputLabel } from '@mui/material';
 import { Select } from '@mui/material';
 
 import { FormControl } from '@mui/material';
+import InputFileUpload from './InputFileUpload';
+import InputFileUpload2 from './InputFileUpload2';
 
 
 
@@ -38,7 +40,7 @@ export default class SaleCar extends Component {
                   </li>
                   <li className='sale litxtt'>
                     <span className='icon checkpoint' >
-                    <img src="" alt="" />
+                      <img src="" alt="" />
 
                     </span>
                     <h5>Get Offer  <strong>in 29 Minutes</strong></h5>
@@ -46,25 +48,25 @@ export default class SaleCar extends Component {
                   </li>
                   <li className='sale litxtt' style={{ font: '18px' }}>
                     <span className='icon checkpoint' >
-                    <img src="" alt="" />
+                      <img src="" alt="" />
 
                     </span>
                     <h5>2000+  <strong>Satisfied Customers</strong></h5>
 
                   </li>
                 </ul>
-                <Button variant="contained" color="success">
+                <Button variant="contained" color="success" m-2>
                   Chat on Whatsapp
                 </Button>
                 {/* <button style={{ margin: "5px" }}> </button> */}
-                <Button variant="contained" color="success">
+                <Button variant="contained" color="success" m-2>
                   Call Now:8742068501
                 </Button>
                 {/* <button>Call Now:8742068501</button> */}
               </div>
-              <div className="col-md-7  Sec1-sale" style={{ paddingLeft: '10px'}}>
-                <img src="src\component\img\sellyourcar-banner-imgbg.jpg" alt=""  style={{  height: "500px", width: "780px",position:"absolute" }} />
-                <img src="src\component\img\sellyourcar-banner-img.png" alt="Car image" style={{ height: "450px", width: "700px",position:"relative"  }} />
+              <div className="col-md-7  Sec1-sale" style={{ paddingLeft: '10px' }}>
+                <img src="src\component\img\sellyourcar-banner-imgbg.jpg" alt="" style={{ height: "500px", width: "780px", position: "absolute" }} />
+                <img src="src\component\img\sellyourcar-banner-img.png" alt="Car image" style={{ height: "450px", width: "700px", position: "relative" }} />
 
               </div>
             </div>
@@ -76,7 +78,7 @@ export default class SaleCar extends Component {
               <h2>AUTHORIZED LUXURY CAR BUYERS IN JAIPUR</h2>
               <h2>THE AUTO MART</h2>
               <div className="col-md-6" style={{
-                padding:"20px"
+                padding: "20px"
               }}>
                 <ul style={{
                   listStyle: "none", textAlign:
@@ -126,7 +128,7 @@ export default class SaleCar extends Component {
                 </ul>
               </div>
 
-              <div className="col-md-6 form-clmn" style={{border:"1px solid black",padding:"30px"}}>
+              <div className="col-md-6 form-clmn" style={{ border: "1px solid black", padding: "30px" }}>
                 <div className="frm-grp cntctfrm-grp">
                   <div className="frm-titles">
                     <h3 className="h4 frm-title">Send us an email</h3>
@@ -135,13 +137,13 @@ export default class SaleCar extends Component {
                   {/* <div><FormGroup/></div> */}
 
                   <form>
-                    <div className=" row form-row" style={{ margin: '0px'}}>
-                      <div className="form-group col-md-6" >
+                    <div className=" row form-row" style={{ margin: '0px' }}>
+                      <div className="form-group col-md-5" >
                         {/* <label for="inputEmail4">Email</label>
       <input type="email" className="form-control" id="inputEmail4" placeholder="Email"/> */}
-                        <TextField id="outlined-basic" label="Name" variant="outlined" type='text' required color='secondary' fullWidth style={{ margin: '5px' }}/>
+                        <TextField id="outlined-basic" label="Name" variant="outlined" type='text' required color='secondary' fullWidth style={{ margin: '5px' }} />
                       </div>
-                      <div className='col-md-6'> <TextField id="outlined-basic" label="Email" variant="outlined" type='email' required color='secondary' fullWidth style={{ margin: '5px' }}/>
+                      <div className='col-md-5'> <TextField id="outlined-basic" label="Email" variant="outlined" type='email' required color='secondary' fullWidth style={{ margin: '5px' }} />
                       </div>
                       <div className="form-group col-md-6">
                         {/* <label for="inputPassword4">Password</label>
@@ -151,20 +153,69 @@ export default class SaleCar extends Component {
                     </div>
 
                     <div className="row form-row" >
-                      <div className="form-group col-md-6" style={{ margin: '5px' }}>
-                        {/* <label for="inputCity">City</label> */}
-                        {/* <input type="text" className="form-control" id="inputCity"/> */}
-                        <TextField id="outlined-basic" label="Location" variant="outlined" color='secondary' fullWidth />
+                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+
+                        <TextField id="outlined-basic" label="Location" variant="outlined" color='secondary' fullWidth required />
                       </div>
-                      <div>
-                        <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }}fullWidth />
+                      <div className="form-group col-md-5">
+                        <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
+
+                      </div>
+                    </div>
+                    <div className="row form-row" >
+                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+
+                        <TextField id="outlined-basic" label="Your Car" variant="outlined" color='secondary' required />
+                      </div>
+                      <div className="form-group col-md-5">
+                        <TextField id="outlined-basic" label="Owner" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
+
+                      </div>
+                    </div>
+                    <div className="row form-row" >
+                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+
+                        <TextField id="outlined-basic" label="Location" variant="outlined"  required color='secondary' fullWidth />
+                      </div>
+                      <div className="form-group col-md-5">
+                        <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
+
+                      </div>
+                    </div>
+                    <div className="row form-row" >
+                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+
+                        <TextField id="outlined-basic" label="Color" variant="outlined" color='secondary' type='text' required />
+                      </div>
+                      <div className="form-group col-md-5">
+                        <TextField id="outlined-basic" label="KM Done" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
+
+                      </div>
+                    </div>
+                    <div className="row form-row" >
+                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+
+                        <TextField id="outlined-basic" label="Resigtration No." variant="outlined" type='Number' color='secondary'  required />
+                      </div>
+                      <div className="form-group col-md-5">
+                        <TextField id="outlined-basic" label="Registration Type" variant="outlined" type='text' required color='secondary' style={{ margin: '5px' }} />
+
+                      </div>
+                    </div>
+                    <div className="row form-row" >
+                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+
+                        <TextField id="outlined-basic" label="Car Insurance" variant="outlined" color='secondary' required />
+                      </div>
+                      <div className="form-group col-md-5">
+                        <TextField id="outlined-basic" label="Is Accidental" variant="outlined" type='Text' required color='secondary' style={{ margin: '5px' }} />
 
                       </div>
                     </div>
                     <div className="form-group" style={{ margin: '5px' }}>
                       {/* <label for="inputAddress">Address</label> */}
                       {/* <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/> */}
-                      <TextField id="outlined-basic" label="Address" variant="outlined" color='secondary' fullWidth />
+                      <TextField id="outlined-basic" label="Address" variant="outlined" color='secondary' required fullWidth />
                     </div>
 
                     {/* <div className="form-group col-md-4"> */}
@@ -199,6 +250,9 @@ export default class SaleCar extends Component {
                         {/* </label> */}
                       </div>
                     </div>
+                   <InputFileUpload/>
+                   <InputFileUpload2/>
+                   <hr/>
                     {/* <button type="submit" className="btn btn-primary">Sign in</button> */}
                     <Button variant="outlined" color="secondary" >Submit</Button>
                   </form>
@@ -214,7 +268,7 @@ export default class SaleCar extends Component {
             <ui style={{ listStyle: "none", display: "flex" }}>
               <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#" className='a-3Sale'>
-                  <img src="src\component\img\Lamborghini-logo.webp" alt="Lamborgini" className='logo'/>
+                  <img src="src\component\img\Lamborghini-logo.webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
@@ -226,19 +280,19 @@ export default class SaleCar extends Component {
               </li>
               <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#" className='a-3Sale'>
-                  <img src="src\component\img\audi-logo (1).webp" alt="Lamborgini" className='logo'/>
+                  <img src="src\component\img\audi-logo (1).webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
               <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#" className='a-3Sale'>
-                  <img src="src\component\img\chevrolet.png" alt="Lamborgini"className='logo' />
+                  <img src="src\component\img\chevrolet.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
               <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#">
-                  <img src="src\component\img\bmw-icon.png" alt="Lamborgini"  className='logo'/>
+                  <img src="src\component\img\bmw-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
@@ -250,7 +304,7 @@ export default class SaleCar extends Component {
               </li>
               <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#">
-                  <img src="src\component\img\ducati-icon.png" alt="Lamborgini"  className='logo'/>
+                  <img src="src\component\img\ducati-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
@@ -264,9 +318,9 @@ export default class SaleCar extends Component {
 
             </ui>
             <ui style={{ listStyle: "none", display: "flex" }}>
-              <li  style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#" className='a-3Sale'>
-                  <img src="src\component\img\nissan-icon.png" alt="Lamborgini" className='logo'/>
+                  <img src="src\component\img\nissan-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
@@ -284,7 +338,7 @@ export default class SaleCar extends Component {
               </li>
               <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#" className='a-3Sale'>
-                  <img src="src\component\img\mahidra.png" alt="Lamborgini"  className='logo'/>
+                  <img src="src\component\img\mahidra.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
@@ -296,7 +350,7 @@ export default class SaleCar extends Component {
               </li>
               <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#" className='a-3Sale'>
-                  <img src="src\component\img\maybach-icon.png" alt="Lamborgini"className='logo' />
+                  <img src="src\component\img\maybach-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
@@ -308,7 +362,7 @@ export default class SaleCar extends Component {
               </li>
               <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
                 <a href="#">
-                  <img src="src\component\img\mini.png" alt="Lamborgini" className='logo'/>
+                  <img src="src\component\img\mini.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
@@ -393,12 +447,12 @@ export default class SaleCar extends Component {
               </div>
             </div>
             <Button variant="contained" color="success">
-                  Chat on Whatsapp
-                </Button>
-                {/* <button style={{ margin: "5px" }}> </button> */}
-                <Button variant="contained" color="success">
-                  Call Now:8742068501
-                </Button>
+              Chat on Whatsapp
+            </Button>
+            {/* <button style={{ margin: "5px" }}> </button> */}
+            <Button variant="contained" color="success">
+              Call Now:8742068501
+            </Button>
           </div>
         </div>
         <div className="Section-5Sale">
@@ -425,23 +479,22 @@ export default class SaleCar extends Component {
         </div>
         <div className="Section-6Sale">
           <div className="container">
-            <div className="col-md-6">
+            
               <img src="src\component\img\outrightsale-icon.png" alt="" className='Section-6Sale-Img' />
-              <span><strong>OUTRIGHT SALE</strong></span>
-              <span><strong>(NOT ONLY EXCHANGE)</strong></span>
+              <h6><strong>OUTRIGHT SALE</strong></h6>
+              <h6><strong>(NOT ONLY EXCHANGE)</strong></h6>
               <p>Sell you cars with us without the boundation of exchange only offers.</p>
               <img src="src\component\img\bestofferin29mins-icon.png" alt="" className='Section-6Sale-Img' />
-              <span><strong>BEST OFFER IN 29MINS</strong></span>
+              <h6><strong>BEST OFFER IN 29MINS</strong></h6>
               <p>Get the best offer of your super car in 29mins post physical/virtual valuation.</p>
               <span><img src="src\component\img\onspot-icon.png" alt="" className='Section-6Sale-Img' /></span>
-              <span><strong>ON SPOT</strong></span>
+              <h6><strong>ON SPOT</strong></h6>
               <p>Easy and quick on the spot payment method when you sell/exchange your cars with us.</p>
               <div> <img src="src\component\img\confidentialityofseller-icon.png" alt="" className='Section-6Sale-Img' /></div>
-              <span><strong>CONFIDENTIALITY
-                OF SELLER.</strong></span>
+              <h6><strong>CONFIDENTIALITY
+                OF SELLER.</strong></h6>
               <p>All your personal details are safe with us and is not passed on to the new buyers.</p>
-            </div>
-            <div className="col-md-6"></div>
+           
 
           </div>
         </div>

@@ -15,16 +15,19 @@ export default function Home() {
     return (
         <div>
             <div className='section-1Home   head-text' >
-                <div >
+                <div className='row'>
+                    <div className='col-sm-12 col-md-12'>
                     <Navbar />
-
-
-                    <img src="src\component\img\c-b-cAbH8B-14Vo-unsplash.jpg" alt="" style={{
-                        width: "1350px",
-                        height: "650px",
+                    <img   src="src\component\img\c-b-cAbH8B-14Vo-unsplash.jpg" alt="" style={{
+                        width: "1370px",
+                        height: "650px"
                         // backgroundSize:"true" 
                     }}
                     />
+                    </div>
+
+
+                   
                     <div className='text-on-image' > <h2 style={{color:"whitesmoke"}}>We Help You...To Buy A 100% Secure Car</h2></div>
                    
                     {/* <h6>Wellcome...we try to give you best experience</h6>  */}
@@ -37,14 +40,14 @@ export default function Home() {
                 <div className="container">
 
                     <div className='row'>
-                        <div className="col-md-6">
+                        <div className="col-md-6 col-sm-12">
                             <h2>PLANNING TO SELL?</h2>
                             <h2>SELL US YOUR CAR</h2>
                             <h2>IN 29 MINUTES.</h2>
                             <div className="row" style={{
                                 padding: '20px'
                             }}>
-                                <motion.div className="col md 3"
+                                <motion.div className="col-sm-3 col-md-6"
                                 transition={{
                                     ease: "linear",
                                     duration: 2,
@@ -56,7 +59,7 @@ export default function Home() {
                                     Best Offer</span>
                                     <span><strong> Sale</strong></span>
                                 </motion.div>
-                                <div className="col md 3"><span>
+                                <div className="col-sm-3 col-md-6"><span>
 
                                     <img src="src\component\img\clock-icon.png" alt="clock-icon" style={{
                                         padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "50px", width: "50px"
@@ -66,13 +69,13 @@ export default function Home() {
                             <div className="row" style={{
                                 padding: '20px'
                             }}>
-                                <div className="col md 3"><span>
+                                <div className="col-sm-3 col-md-6"><span>
                                     <img src="src\component\img\men-icon1.png" alt="men-icon1" style={{
                                         padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "50px", width: "50px"
                                     }} />
                                     7600+ Satisfied
                                     <strong> Customers</strong></span></div>
-                                <div className="col md 3"><span>
+                                <div className="col-sm-3 col-md-6"><span>
                                     <img src="src\component\img\hasslefree-icon1.png" alt="hasslefree-icon1" style={{
                                         padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "50px", width: "50px"
                                     }} />
@@ -83,7 +86,7 @@ export default function Home() {
                                     <strong> Processing</strong></span></div></div>
 
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 col-sm-12">
                             <img src="src\component\img\sellyrcar-quotefeactured-img.jpg" alt="" />
                         </div>
                     </div>
@@ -124,12 +127,15 @@ export default function Home() {
                 </div>
             </motion.div>
             <div className='Secton-5Home' style={{textAlign:"center", padding:"20px"}}>
-                <div>
-                   <h2>POPULAR @</h2>
+                <div className='row'>
+                    <div className='col-sm-12 col-md-12 '>
+                    <h2>POPULAR @</h2>
                    <h2>THE AUTO MART</h2>
                    <div style={{padding:"80px"}}>
                   {/* <SwipeableTextMobileStepper style={{textItem:"center", padding:"20px", width:"800px"}}/> */}
                   {/* <ParallaxCarousel/> */}
+                    </div>
+                 
                    </div>
                 </div>
             </div>

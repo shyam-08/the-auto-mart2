@@ -8,9 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // import { TabContext} from '@mui/material';
 // for material ui 
 import { TabContext } from '@mui/lab';
-import { Box } from '@mui/material';
+// import { Box } from '@mui/material';
 import PropTypes from 'prop-types';
-
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 import { Tab } from '@mui/base/Tab';
 import { TabsList } from '@mui/base/TabsList';
 import { TabPanel } from '@mui/base/TabPanel';
@@ -22,10 +24,10 @@ import BasicTabs from './BasicTabs';
 
 // for animation framer motion library  
 export default class Faq extends Component {
-  
+
 
   render() {
-  
+
     // function CustomTabPanel(props) {
     //   const { children, value, index, ...other } = props;
     // }    
@@ -42,64 +44,84 @@ export default class Faq extends Component {
     //   };
     // }
 
-//  function BasicTabs() {
-//   const [value, setValue] = React.useState(0);}
+    //  function BasicTabs() {
+    //   const [value, setValue] = React.useState(0);}
 
-//     const handleChange =()=>{
-//       setValue(newValue);
-//     }
+    //     const handleChange =()=>{
+    //       setValue(newValue);
+    //     }
     return (
-      
-      <div >
-        <div className='faq-section-1 head-text'>
-          <div>
-            <div><Navbar /></div>
-            <div>
-            <img src="src\component\img\pexels-pixabay-261985.jpg" alt="car image" style={{ height: '550px', width: '1350px' }} />
 
-            </div>
-          <div className='text-on-image' >
-            <p>FREQUENTLY ASKED FAQ</p>
-            <h2>HELLO, HOW WE CAN HELP</h2>
-          </div>
-          </div>
-        </div>
-       
+      <Box >
+        <Grid className='faq-section-1 head-text' >
+          <Grid>
+            <Grid><Navbar /></Grid>
+            <Box  >
+              <img src="src\component\img\pexels-pixabay-261985.jpg" alt="car image" style={{ height: '550px', width: '1350px' }} />
 
-        <div>
-        <div className='container' style={{padding:"30px"}}>
-         
-  <BasicTabs/>
-        </div> 
-       </div>
-        <div className="section-3Faq " style={{textAlign:"center",padding:"50px",  display:"flex"}}>
-          <div className="container">
+            </Box>
+            <Grid className='text-on-image' >
+              <p>FREQUENTLY ASKED FAQ</p>
+              <h2>HELLO, HOW WE CAN HELP</h2>
+            </Grid>
+          </Grid>
+        </Grid>
+
+
+        <Box>
+          <Grid container  style={{ padding: "30px" }}>
+
+            <BasicTabs />
+          </Grid>
+        </Box>
+        <Box className="section-3Faq "
+          style={{
+            textAlign: "center",
+            padding: "50px",
+            //  display:"flex"
+          }}
+        >
+          <Grid spacing={2} >
             <h2>YOU STILL HAVE A QUESTION?</h2>
             <p>If you connot find answer to your question in our FAQ, you can always contact us.
               We will answer to you shortly!</p>
-            <div className='row'>
-              <div className="col-md-6 col-sm-12" style={{border:"1px solid black", borderRadius:"10px",padding:"30px",margin:"10px",width:"48%"}}>
-               <img src="src\component\img\mobile.png" alt=" mobile" style={{padding:"5px"}} />
+            <Grid container >
+              <Grid item xs={5}
+                style={{
+                  border: "1px solid black",
+                  borderRadius: "10px",
+                  padding: "30px",
+                  margin: "10px",
+                  // width:"48%"
+                }}
+              >
+
+                <img src="src\component\img\mobile.png" alt=" mobile" style={{ padding: "5px" }} />
                 <h6>8742068501</h6>
                 <p>We are always happy to help</p>
-              </div>
-              <div className="col-md-6 col-sm-12"  style={{border:"1px solid black", borderRadius:"10px",padding:"30px",margin:"10px",width:"48%"}}>
-                
-              <img src="src\component\img\email.png" alt="email" style={{padding:"5px"}}/>
-              <h6>team@theautomart.com</h6>
+              </Grid>
+              <Grid item xs={5} style={{
+                border: "1px solid black",
+                borderRadius: "10px", padding: "30px",
+                margin: "10px",
+                //  width:"48%"
+              }}>
+
+                <img src="src\component\img\email.png" alt="email" style={{ padding: "5px" }} />
+                <h6>team@theautomart.com</h6>
                 <p>The best way to get ansawer faster.</p>
 
 
-              </div>
+              </Grid>
+            </Grid>
 
-            </div>
-          </div>
+          </Grid>
 
-        </div>
-        <div className='section last'> <div><Footer /></div>
-        </div>
+        </Box>
+        <Grid className='section last'> <Grid><Footer /></Grid>
+        </Grid>
 
-      </div>
+      </Box>
     )
   }
 }
