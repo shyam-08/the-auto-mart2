@@ -56,11 +56,11 @@ export default class Faq extends Component {
         <Grid className='faq-section-1 head-text' >
           <Grid>
             <Grid><Navbar /></Grid>
-            <Box  >
+            <Box>
               <img src="src\component\img\pexels-pixabay-261985.jpg" alt="car image" style={{ height: '550px', width: '1350px' }} />
 
             </Box>
-            <Grid className='text-on-image' >
+            <Grid className='text-on-image'  >
               <p>FREQUENTLY ASKED FAQ</p>
               <h2>HELLO, HOW WE CAN HELP</h2>
             </Grid>
@@ -69,7 +69,7 @@ export default class Faq extends Component {
 
 
         <Box>
-          <Grid container  style={{ padding: "30px" }}>
+          <Grid container style={{ padding: "30px" }} >
 
             <BasicTabs />
           </Grid>
