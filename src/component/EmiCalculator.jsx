@@ -134,7 +134,9 @@ import "./Config.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 const EmiCalculator = () => {
   const [cost, setCost] = useState();
   const [interest, setInterest] = useState(10);
@@ -172,76 +174,76 @@ const EmiCalculator = () => {
   };
 
   return (
-    <div>
-      <div>
-        <Navbar/>
-      </div>
-    <div className=" Container emical"  style={{  padding:"20px",margin:"20px 50px" }}>
-      <h3 className="title" style={{textAlign:"center"}}>Emi Calculator</h3>
-      <h6 className="subTitle">Total cost of Asset</h6>
-      <input
-        type="number"
-        value={cost}
-        onChange={(e) => setCost(e.target.value)}
-        placeholder="Total cost of asset"
-      />
-      <h6>Interest Rate(in %)</h6>
-      <input
-        type="number"
-        value={interest}
-        onChange={(e) => setInterest(e.target.value)}
-        placeholder="Rate of interest as per market standars"
-      />
-      <h6>Processing fee (in %)</h6>
-      <input
-        type="number"
-        value={fee}
-        onChange={(e) => setFee(e.target.value)}
-        placeholder="processing fee"
-      />
-      <h6 className="title">DownPayment of your asset</h6>
-      <span className="title" style={{ textDecoration: "underline" }}>
-        Total Down Payment - {(Number(downPayment) + (cost - downPayment) * (fee / 100)).toFixed(0)}
-      </span>
-      <div>
+    <Box>
+      <Grid>
+        <Navbar />
+      </Grid>
+      <Grid className=" Container emical" style={{ padding: "20px", margin: "20px 50px" }}>
+        <h3 className="title" style={{ textAlign: "center" }}>Emi Calculator</h3>
+        <h6 className="subTitle">Total cost of Asset</h6>
         <input
-          type="range"
-          min={0}
-          max={cost}
-          className="slider"
-          value={emi}
-          onChange={UpdateEMI}
-          placeholder="Down Payement of your assest"
+          type="number"
+          value={cost}
+          onChange={(e) => setCost(e.target.value)}
+          placeholder="Total cost of asset"
         />
-      </div>
-      <h6>Loan per month</h6>
-      <span className="title" style={{ textDecoration: "underline" }}>
-        Total Loan Amount - {(emi * tenure).toLocaleString('en-US')}
-      </span>
-      <div>
+        <h6>Interest Rate(in %)</h6>
         <input
-          type="range"
-          min={calculateEMI(cost)}
-          max={calculateEMI(0)}
-          className="slider"
-          value={emi}
-          onChange={UpdateDownPayment}
-          placeholder="your emi"
+          type="number"
+          value={interest}
+          onChange={(e) => setInterest(e.target.value)}
+          placeholder="Rate of interest as per market standars"
         />
-        <div className="lables">
-          <label>{calculateEMI(cost)}</label>
-          <b>{downPayment.toLocaleString('en-US')}</b>
-          <label>{calculateEMI(0)}</label>
+        <h6>Processing fee (in %)</h6>
+        <input
+          type="number"
+          value={fee}
+          onChange={(e) => setFee(e.target.value)}
+          placeholder="processing fee"
+        />
+        <h6 className="title">DownPayment of your asset</h6>
+        <span className="title" style={{ textDecoration: "underline" }}>
+          Total Down Payment - {(Number(downPayment) + (cost - downPayment) * (fee / 100)).toFixed(0)}
+        </span>
+        <div>
+          <input
+            type="range"
+            min={0}
+            max={cost}
+            className="slider"
+            value={emi}
+            onChange={UpdateEMI}
+            placeholder="Down Payement of your assest"
+          />
         </div>
-      </div>
-    </div>
-    <div>
-    <div>
-      <Footer/>
-          </div>
-    </div>
-    </div>
+        <h6>Loan per month</h6>
+        <span className="title" style={{ textDecoration: "underline" }}>
+          Total Loan Amount - {(emi * tenure).toLocaleString('en-US')}
+        </span>
+        <Grid>
+          <input
+            type="range"
+            min={calculateEMI(cost)}
+            max={calculateEMI(0)}
+            className="slider"
+            value={emi}
+            onChange={UpdateDownPayment}
+            placeholder="your emi"
+          />
+          <Grid className="lables">
+            <label>{calculateEMI(cost)}</label>
+            <b>{downPayment.toLocaleString('en-US')}</b>
+            <label>{calculateEMI(0)}</label>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid>
+        <div>
+          <Footer />
+        </div>
+      </Grid>
+    </Box>
   );
 };
 
-export default EmiCalculator;
+export default EmiCalculator;
