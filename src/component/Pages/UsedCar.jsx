@@ -10,13 +10,14 @@ import Card from './Card'
 import Button from './Button'
 // for animation framer motioni library 
 // import { motion } from "framer-motion"
-export default class UsedCar extends Component {
-  render() {
-    const [Item,setItem]=useState(Data)
-    const menuItems = [...new set(Data.map((val)=>val.category))]
+function UsedCar () {
+  const [Item,setItem]= useState(Cars);
+  const menuItems = [...new set(Cars.map((Card)=>Card.category))]
 
+ 
+   
 const  filterItem=(cat)=>{
-const newItem = Data.filter((newval)=>newval.category===cat)
+const newItem = Cars.filter((newval)=>newval.category===cat)
 setItems(newItems);
 }
 
@@ -34,8 +35,10 @@ setItems(newItems);
       </div>
     )
   }
-}
-{/*         
+
+export default  UsedCar
+// {
+  /*         
         <Navbar />
         <div className='section-2'>
           <div className='container-fluid'>
@@ -67,4 +70,5 @@ setItems(newItems);
             </div>
           </div>
         </div>
-        <Footer /> */}
+        <Footer /> */
+      // }

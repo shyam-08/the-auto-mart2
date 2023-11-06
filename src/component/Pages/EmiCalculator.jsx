@@ -129,14 +129,14 @@
 //     )
 // }
 import React, { useState, useEffect } from "react";
-import "./styles.css";
+import "./Styles.css";
 import "./Config.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
+// import div from '@mui/material/div';
 const EmiCalculator = () => {
   const [cost, setCost] = useState();
   const [interest, setInterest] = useState(10);
@@ -175,10 +175,10 @@ const EmiCalculator = () => {
 
   return (
     <Box>
-      <Grid>
+      <div>
         <Navbar />
-      </Grid>
-      <Grid className=" Container emical" style={{ padding: "20px", margin: "20px 50px" }}>
+      </div>
+      <div className=" Container emical" style={{ padding: "20px", margin: "20px 50px" }}>
         <h3 className="title" style={{ textAlign: "center" }}>Emi Calculator</h3>
         <h6 className="subTitle">Total cost of Asset</h6>
         <input
@@ -220,7 +220,7 @@ const EmiCalculator = () => {
         <span className="title" style={{ textDecoration: "underline" }}>
           Total Loan Amount - {(emi * tenure).toLocaleString('en-US')}
         </span>
-        <Grid>
+        <div>
           <input
             type="range"
             min={calculateEMI(cost)}
@@ -230,18 +230,18 @@ const EmiCalculator = () => {
             onChange={UpdateDownPayment}
             placeholder="your emi"
           />
-          <Grid className="lables">
+          <div className="lables">
             <label>{calculateEMI(cost)}</label>
             <b>{downPayment.toLocaleString('en-US')}</b>
             <label>{calculateEMI(0)}</label>
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid>
+          </div>
+        </div>
+      </div>
+      <div>
         <div>
           <Footer />
         </div>
-      </Grid>
+      </div>
     </Box>
   );
 };

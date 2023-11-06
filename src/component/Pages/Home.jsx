@@ -2,8 +2,8 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import "./About.css";
-import QueryBuilderOutlinedIcon from '@mui/icons-material/QueryBuilderOutlined';
-import { Card } from '@mui/material';
+// import QueryBuilderOutlinedIcon from '@mui/icons-material/QueryBuilderOutlined';
+// import { Card } from '@mui/material';
 // import SwipeableTextMobileStepper from './SwipeableTextMobileStepper';
 import { motion } from "framer-motion";
 // import ParallaxCarousel from './ParallaxCarousel';
@@ -19,8 +19,8 @@ export default function Home() {
                     <div className='col-sm-12 col-md-12'>
                     <Navbar />
                     <img   src="src\component\img\c-b-cAbH8B-14Vo-unsplash.jpg" alt="" style={{
-                        width: "1370px",
-                        height: "650px"
+                        width: "100%",
+                        height: "100%"
                         // backgroundSize:"true" 
                     }}
                     />
@@ -28,16 +28,16 @@ export default function Home() {
 
 
                    
-                    <div className='text-on-image' > <h2 style={{color:"whitesmoke"}}>We Help You...To Buy A 100% Secure Car</h2></div>
+               <h2 style={{color:"whitesmoke"}}>We Help You...To Buy A 100% Secure Car</h2>
                    
                     {/* <h6>Wellcome...we try to give you best experience</h6>  */}
                 </div>
             </div>
             <motion.div className='section-2Home' 
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }} style={{boxSizing:"border-box"}}
             >
-                <div className="container">
+                <div className="container" >
 
                     <div className='row'>
                         <div className="col-md-6 col-sm-12">
@@ -67,7 +67,7 @@ export default function Home() {
 
                                     <strong> in 29 Minutes</strong></span></div></div>
                             <div className="row" style={{
-                                padding: '20px'
+                                padding: '20px',
                             }}>
                                 <div className="col-sm-3 col-md-6"><span>
                                     <img src="src\component\img\men-icon1.png" alt="men-icon1" style={{
@@ -86,8 +86,8 @@ export default function Home() {
                                     <strong> Processing</strong></span></div></div>
 
                         </div>
-                        <div className="col-md-6 col-sm-12">
-                            <img src="src\component\img\sellyrcar-quotefeactured-img.jpg" alt="" />
+                        <div className="col-md-6 col-sm-12" >
+                            <img src="src\component\img\sellyrcar-quotefeactured-img.jpg" alt="" height="100%" width="100%"/>
                         </div>
                     </div>
 
@@ -95,7 +95,7 @@ export default function Home() {
             </motion.div>
             <motion.div className='section-3Home'
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}>
+            whileInView={{ opacity: 1 }} style={{boxSizing:"border-box"}}> 
                 <div>
                     <h3>HOW IT WORKS </h3>
                     <p>
@@ -126,7 +126,7 @@ export default function Home() {
                     </div>
                 </div>
             </motion.div>
-            <div className='Secton-5Home' style={{textAlign:"center", padding:"20px"}}>
+            <div className='Secton-5Home' style={{textAlign:"center", padding:"20px", boxSizing:"border-box"}}>
                 <div className='row'>
                     <div className='col-sm-12 col-md-12 '>
                     <h2>POPULAR @</h2>
@@ -141,11 +141,11 @@ export default function Home() {
             </div>
             <motion.div className='secton-4Home'
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}>
+            whileInView={{ opacity: 1 }} style={{boxSizing:"border-box"}}>
                 <div>
                     <Footer />
                 </div>
             </motion.div>
-        </div >
+        </div>
     )
 }

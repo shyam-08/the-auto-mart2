@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default class WhyUs extends Component {
   render() {
     return (
-      <div>
+      <>
         <div className=' section-1 Why-bg'>
           <div >
             <Navbar />
@@ -25,10 +25,10 @@ export default class WhyUs extends Component {
             <div className="row" style={{
               padding: "70px"
             }}>
-              <div className="col-md-4">
+              <div className="col-md-4 col-sm-12">
                 <img src="src\component\img\whyus-experience-img1.jpg" alt="" style={{ height: "500px", width: "400px" }} />
               </div>
-              <div className="col-md-8" style={{
+              <div className="col-md-8 col-sm-12" style={{
                 padding: "80px"
               }}>
                 <h1>EXPERIENCE</h1>
@@ -38,7 +38,7 @@ export default class WhyUs extends Component {
                 <div className="row" style={{
                   padding: '20px'
                 }}>
-                  <div className="col-md-4"><span>
+                  <div className="col-md-4 col-sm-12"><span>
                     <img src="src\component\img\outrightsell-icon.png" alt="outrightsell" style={{
                       padding: "5px", border: "1px solid black ", margin: "4px", borderRadius: "10px", height: "40px", width: "40px"
                     }} />
@@ -72,17 +72,19 @@ export default class WhyUs extends Component {
         </div>
         <div className='Section-3'>
           <div className='container'>
+
             <h4>Our client</h4>
             <h2>People Trust Us For Our Expertise</h2>
             <p>
               BBT's showroom has become a hot destination for Bollywood stars and well known celebrities. Stars of the likes of Neha Dhupia and Yuvraj Singh have come down to catch a glimpse of BBT's exotic collection of dazzling high-performance cars.</p>
           </div>
         </div>
+
         <div className='Section-4' style={{ padding: "40px" }}>
           {/* <div className="container"> */}
           <div className="row">
 
-            <div className="col-md-5" style={{
+            <div className="col-md-5 col-sm-12" style={{
               padding: "60px", textAlign: "justify"
 
             }}>
@@ -90,17 +92,17 @@ export default class WhyUs extends Component {
               <h3>AND PASSIONATE TEAM</h3>
               <p >We accept that the clients’ need and intrigue consistently starts things out and ought to be given the most effective attention. Our exotic vehicle assortment entices you to pick something novel and particular to suit your style . Find a remarkable universe of extravagance and energy at Big Boy Toyz with one of the best car extravaganza marked on offer. Allow your investigation to start!</p>
             </div>
-            <div className="col-md-7">
-              <img src="src\component\img\highlyprofessional-passionateteam.jpg" alt="" style={{ height: "500px", width: "700px", padding: "10px" }} />
+            <div className="col-md-7 col-sm-12">
+              <img src="src\component\img\highlyprofessional-passionateteam.jpg" alt="" style={{ height: "100%", width: "100%", padding: "10px" }} />
             </div>
           </div>
 
           {/* </div> */}
         </div>
-        <div className='section-5' style={{ padding: "40px", width: "100%" ,textAlign:"center"}}>
+        <div className='section-5' style={{ padding: "40px", width: "100%", textAlign: "center" }}>
           <div className="container">
             <h2>BEST CAR INSPECTION</h2>
-              <h2>TEAM IN JAIPUR</h2>
+            <h2>TEAM IN JAIPUR</h2>
             <ul style={{ listStyle: "none" }}>
               <li>
                 <span> <img src="src\component\img\zerotolerance-icon.png" alt="zerotolerance-icon" style={
@@ -249,7 +251,8 @@ export default class WhyUs extends Component {
           </div>
         </div>
         <Footer />
-      </div>
+      </ >
+      
     )
   }
 }

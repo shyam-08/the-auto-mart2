@@ -8,19 +8,18 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // import { TabContext} from '@mui/material';
 // for material ui 
 import { TabContext } from '@mui/lab';
-// import { Box } from '@mui/material';
+// import { div } from '@mui/material';
 import PropTypes from 'prop-types';
-import Box from '@mui/material/Box';
+// import div from '@mui/material/div';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
 import { Tab } from '@mui/base/Tab';
 import { TabsList } from '@mui/base/TabsList';
 import { TabPanel } from '@mui/base/TabPanel';
 import { Tabs } from '@mui/base/Tabs';
-import FinanceCar from './FinanceCar';
-import SellingCar from './SellingCar';
-import BuyingCar from './BuyingCar';
-import BasicTabs from './BasicTabs';
+import FinanceCar from '../Pages/FinanceCar';
+import SellingCar from '../Pages/SellingCar';
+import BuyingCar from '../Pages/BuyingCar';
+import BasicTabs from '../Pages/BasicTabs';
 
 // for animation framer motion library  
 export default class Faq extends Component {
@@ -52,76 +51,77 @@ export default class Faq extends Component {
     //     }
     return (
 
-      <Box >
-        <Grid className='faq-section-1 head-text' >
-          <Grid>
-            <Grid><Navbar /></Grid>
-            <Box>
+      <div >
+        <div className='faq-section-1 head-text' >
+          <div>
+            <div><Navbar /></div>
+            <div className='col-md-12 col-sm-12'>
               <img src="src\component\img\pexels-pixabay-261985.jpg" alt="car image" style={{ height: '550px', width: '1350px' }} />
 
-            </Box>
-            <Grid className='text-on-image'  >
+            </div>
+            <div className='text-on-image col-sm-12 col-md-12'  >
               <p>FREQUENTLY ASKED FAQ</p>
               <h2>HELLO, HOW WE CAN HELP</h2>
-            </Grid>
-          </Grid>
-        </Grid>
+            </div>
+          </div>
+        </div>
 
 
-        <Box>
-          <Grid container style={{ padding: "30px" }} >
+        <div>
+          <div className ='col-sm-12 col-md-12' style={{ padding: "30px" }} >
 
             <BasicTabs />
-          </Grid>
-        </Box>
-        <Box className="section-3Faq "
+          </div>
+        </div>
+        <div className="section-3Faq "
           style={{
             textAlign: "center",
             padding: "50px",
             //  display:"flex"
           }}
         >
-          <Grid spacing={2} >
+          <div   className='col-sm-12 col-md-12'>
             <h2>YOU STILL HAVE A QUESTION?</h2>
             <p>If you connot find answer to your question in our FAQ, you can always contact us.
               We will answer to you shortly!</p>
-            <Grid container >
-              <Grid item xs={5}
+            <div className='row'>
+              <div className='col-sm-12 col-md-5' 
                 style={{
                   border: "1px solid black",
                   borderRadius: "10px",
                   padding: "30px",
                   margin: "10px",
-                  // width:"48%"
+                  width:"48%"
                 }}
               >
 
-                <img src="src\component\img\mobile.png" alt=" mobile" style={{ padding: "5px" }} />
+                <img src="src\component\img\mobile.png" alt=" mobile" style={{ padding: "10px" }} />
                 <h6>8742068501</h6>
                 <p>We are always happy to help</p>
-              </Grid>
-              <Grid item xs={5} style={{
+              </div>
+              <div className='col-sm-12 col-md-5' 
+              style={{
                 border: "1px solid black",
                 borderRadius: "10px", padding: "30px",
                 margin: "10px",
-                //  width:"48%"
+                 width:"48%"
               }}>
 
-                <img src="src\component\img\email.png" alt="email" style={{ padding: "5px" }} />
+                <img src="src\component\img\email.png" alt="email" style={{ padding: "10px" }} />
                 <h6>team@theautomart.com</h6>
                 <p>The best way to get ansawer faster.</p>
 
 
-              </Grid>
-            </Grid>
+              </div>
+            </div>
 
-          </Grid>
+          </div>
 
-        </Box>
-        <Grid className='section last'> <Grid><Footer /></Grid>
-        </Grid>
+        </div>
+        <div className='section last'> <div><Footer /></div>
+        </div>
 
-      </Box>
+      </div>
     )
   }
 }

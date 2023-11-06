@@ -24,7 +24,7 @@ export default class SaleCar extends Component {
           <div className="container-fluid">
             <Navbar />
             <div className="row SaleCar1" >
-              <div className="col-md-5" style={{ alignContent: 'center', padding: "20px" }}>
+              <div className="col-md-5 col-sm-12" style={{ alignContent: 'center', padding: "20px" }}>
                 <h3>SELL YOUR LUXURY CAR</h3>
                 <h3 style={{ color: 'transparent !important', webkittextstrokewidth: '1px', webkittextstrokecolor: '#000' }}>WITHIN 29 MINUTES IN</h3>
                 <h3>3 EASY STEPS.</h3>
@@ -55,18 +55,18 @@ export default class SaleCar extends Component {
 
                   </li>
                 </ul>
-                <Button variant="contained" color="success" m-2>
+                <Button variant="contained" color="success" >
                   Chat on Whatsapp
                 </Button>
                 {/* <button style={{ margin: "5px" }}> </button> */}
-                <Button variant="contained" color="success" m-2>
+                <Button variant="contained" color="success" >
                   Call Now:8742068501
                 </Button>
                 {/* <button>Call Now:8742068501</button> */}
               </div>
-              <div className="col-md-7  Sec1-sale" style={{ paddingLeft: '10px' }}>
-                <img src="src\component\img\sellyourcar-banner-imgbg.jpg" alt="" style={{ height: "500px", width: "780px", position: "absolute" }} />
-                <img src="src\component\img\sellyourcar-banner-img.png" alt="Car image" style={{ height: "450px", width: "700px", position: "relative" }} />
+              <div className="col-md-7 col-sm-12 Sec1-sale" style={{ paddingLeft: '10px' }}>
+                <img src="src\component\img\sellyourcar-banner-imgbg.jpg" alt="" style={{ height: "auto", width: "100%", position: "absolute" }} />
+                <img src="src\component\img\sellyourcar-banner-img.png" alt="Car image" style={{ height: "auto", width: "100%", position: "relative" }} />
 
               </div>
             </div>
@@ -77,7 +77,7 @@ export default class SaleCar extends Component {
             <div className="row">
               <h2>AUTHORIZED LUXURY CAR BUYERS IN JAIPUR</h2>
               <h2>THE AUTO MART</h2>
-              <div className="col-md-6" style={{
+              <div className="col-md-6 col-sm-12" style={{
                 padding: "20px"
               }}>
                 <ul style={{
@@ -128,7 +128,7 @@ export default class SaleCar extends Component {
                 </ul>
               </div>
 
-              <div className="col-md-6 form-clmn" style={{ border: "1px solid black", padding: "30px" }}>
+              <div className="col-md-6  col-sm-12 form-clmn" style={{ border: "1px solid black", padding: "30px" }}>
                 <div className="frm-grp cntctfrm-grp">
                   <div className="frm-titles">
                     <h3 className="h4 frm-title">Send us an email</h3>
@@ -138,14 +138,14 @@ export default class SaleCar extends Component {
 
                   <form>
                     <div className=" row form-row" style={{ margin: '0px' }}>
-                      <div className="form-group col-md-5" >
+                      <div className="form-group col-md-5 col-sm-6" >
                         {/* <label for="inputEmail4">Email</label>
       <input type="email" className="form-control" id="inputEmail4" placeholder="Email"/> */}
                         <TextField id="outlined-basic" label="Name" variant="outlined" type='text' required color='secondary' fullWidth style={{ margin: '5px' }} />
                       </div>
                       <div className='col-md-5'> <TextField id="outlined-basic" label="Email" variant="outlined" type='email' required color='secondary' fullWidth style={{ margin: '5px' }} />
                       </div>
-                      <div className="form-group col-md-6">
+                      <div className="form-group col-md-6 col-sm-6">
                         {/* <label for="inputPassword4">Password</label>
       <input type="password" className="form-control" id="inputPassword4" placeholder="Password"/> */}
 
@@ -153,66 +153,66 @@ export default class SaleCar extends Component {
                     </div>
 
                     <div className="row form-row" >
-                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+                      <div className="form-group col-md-5 col-sm-6" style={{ margin: '5px' }}>
 
                         <TextField id="outlined-basic" label="Location" variant="outlined" color='secondary' fullWidth required />
                       </div>
-                      <div className="form-group col-md-5">
+                      <div className="form-group col-md-5 col-sm-6">
                         <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
 
                       </div>
                     </div>
                     <div className="row form-row" >
-                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+                      <div className="form-group col-md-5 col-sm-6" style={{ margin: '5px' }}>
 
                         <TextField id="outlined-basic" label="Your Car" variant="outlined" color='secondary' required />
                       </div>
-                      <div className="form-group col-md-5">
+                      <div className="form-group col-md-5 col-sm-6">
                         <TextField id="outlined-basic" label="Owner" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
 
                       </div>
                     </div>
                     <div className="row form-row" >
-                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+                      <div className="form-group col-md-5 col-sm-6" style={{ margin: '5px' }}>
 
                         <TextField id="outlined-basic" label="Location" variant="outlined"  required color='secondary' fullWidth />
                       </div>
-                      <div className="form-group col-md-5">
+                      <div className="form-group col-md-5 col-sm-6">
                         <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
 
                       </div>
                     </div>
                     <div className="row form-row" >
-                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+                      <div className="form-group col-md-5 col-sm-6" style={{ margin: '5px' }}>
 
                         <TextField id="outlined-basic" label="Color" variant="outlined" color='secondary' type='text' required />
                       </div>
-                      <div className="form-group col-md-5">
+                      <div className="form-group col-md-5 col-sm-6">
                         <TextField id="outlined-basic" label="KM Done" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
 
                       </div>
                     </div>
                     <div className="row form-row" >
-                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+                      <div className="form-group col-md-5 col-sm-6" style={{ margin: '5px' }}>
 
                         <TextField id="outlined-basic" label="Resigtration No." variant="outlined" type='Number' color='secondary'  required />
                       </div>
-                      <div className="form-group col-md-5">
+                      <div className="form-group col-md-5 col-sm-6">
                         <TextField id="outlined-basic" label="Registration Type" variant="outlined" type='text' required color='secondary' style={{ margin: '5px' }} />
 
                       </div>
                     </div>
                     <div className="row form-row" >
-                      <div className="form-group col-md-5" style={{ margin: '5px' }}>
+                      <div className="form-group col-md-5 col-sm-6" style={{ margin: '5px' }}>
 
                         <TextField id="outlined-basic" label="Car Insurance" variant="outlined" color='secondary' required />
                       </div>
-                      <div className="form-group col-md-5">
+                      <div className="form-group col-md-5 col-sm-6">
                         <TextField id="outlined-basic" label="Is Accidental" variant="outlined" type='Text' required color='secondary' style={{ margin: '5px' }} />
 
                       </div>
                     </div>
-                    <div className="form-group" style={{ margin: '5px' }}>
+                    <div className="form-group col-sm-12" style={{ margin: '5px' }}>
                       {/* <label for="inputAddress">Address</label> */}
                       {/* <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/> */}
                       <TextField id="outlined-basic" label="Address" variant="outlined" color='secondary' required fullWidth />
@@ -266,49 +266,49 @@ export default class SaleCar extends Component {
           <div className="container">
             <h2>OTHER BRANDS</h2>
             <ui style={{ listStyle: "none", display: "flex" }}>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\Lamborghini-logo.webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\Aston-Martin-logo-2003-6000x3000.webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\audi-logo (1).webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\chevrolet.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#">
                   <img src="src\component\img\bmw-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\dc-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#">
                   <img src="src\component\img\ducati-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#">
                   <img src="src\component\img\fiat-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
@@ -317,50 +317,50 @@ export default class SaleCar extends Component {
 
 
             </ui>
-            <ui style={{ listStyle: "none", display: "flex" }}>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+            <ui style={{ listStyle: "none", display: "flex",   liststyletype: 'circle'}}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\nissan-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\Jaguar-logo.webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\LexusSmallMain.webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\mahidra.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#">
                   <img src="src\component\img\Maserati-symbol-1920x1080_edited.webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\maybach-icon.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#">
                   <img src="src\component\img\mercedes-benz-logo.webp" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}
                 </a>
               </li>
-              <li style={{ webkitboxsizing: 'border-box', boxsizing: 'border-box' }}>
+              <li >
                 <a href="#">
                   <img src="src\component\img\mini.png" alt="Lamborgini" className='logo' />
                   {/* <span>Lamborgini</span> */}

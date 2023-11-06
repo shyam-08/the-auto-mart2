@@ -1,7 +1,7 @@
 .aboutUS-bgimage {
-    background: url("img/pexels.jpeg");
-    height: 700px;
-    width: 1350px;
+    background: url("src\component\Img\pexels.jpeg");
+    height: auto;
+    max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

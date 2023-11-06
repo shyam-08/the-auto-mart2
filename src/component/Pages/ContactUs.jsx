@@ -7,7 +7,7 @@ import Footer from './Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
+// import div from '@mui/material/div';
 // for material ui 
 import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
@@ -22,44 +22,44 @@ export default class ContactUs extends Component {
     render() {
         return (
             // <!-- START - Contact Us Section -->
-            <Box className="lightgray contactus-sec">
-            <Grid className="section-1">
+            <div className="lightgray contactus-sec">
+            <div className="section-1" style={{boxSizing:"border-box"}}>
                  <Navbar />
-            </Grid>
+            </div>
 
             
-                   <Box className="section-2" style={{
-                    padding:"40px",background:"whitesmoke"
+                   <div className="section-2" style={{
+                    padding:"40px",background:"whitesmoke",boxSizing:"border-box"
                    }}>
-                <Grid className="container">
+                <div className="container">
                 
-                    <Grid className="secheader-grp">
+                    <div className="secheader-grp">
                         <h1 className="h4 sectitle">Contact us</h1>
-                    </Grid>
-                    <Grid className="row flexrow">
-                        <Grid className="col-md-6 cntnt-clmn">
-                            <Grid className="cntnt-grp">
+                    </div>
+                    <div className="row flexrow">
+                        <div className="col-md-6 cntnt-clmn">
+                            <div className="cntnt-grp">
                                 <ul className="contactusdetail-list">
                                     <li className="mail">
-                                        <Grid className="li-innr">
+                                        <div className="li-innr">
                                             <h6 className="h7"><a href="mailto:sales@bigboytoyz.com">sales@bigboytoyz.com</a></h6>
                                             <p>The best way to get answer faster.</p>
-                                        </Grid>
+                                        </div>
                                     </li>
                                     <li className="call">
-                                        <Grid className="li-innr">
+                                        <div className="li-innr">
                                             <h6 className="h7">For Preowned Cars</h6>
                                             <h6 className="h7"><a href="tel:+91-9999999983">(+91) 9999 9999 83</a></h6>
                                             <p>We are happy to help (10am to 10pm)</p>
-                                        </Grid>
+                                        </div>
                                     </li>
 
                                     <li className="call">
-                                        <Grid className="li-innr">
+                                        <div className="li-innr">
                                             <h6 className="h7">For Vintage & Classic Cars</h6>
                                             <h6 className="h7"><a href="tel:+91-9999999017">(+91) 9999 9990 17</a></h6>
                                             <p>or email us at vintage@bigboytoyz.com</p>
-                                        </Grid>
+                                        </div>
                                     </li>
                                 </ul>
                                 <br className="hide-480" />
@@ -71,50 +71,50 @@ export default class ContactUs extends Component {
                                     </li>
 
                                 </ul>
-                            </Grid>
-                        </Grid>
-                        <Grid className="col-md-6 form-clmn">
-                            <Grid className="frm-grp cntctfrm-grp">
-                                <Grid className="frm-titles">
+                            </div>
+                        </div>
+                        <div className="col-md-6 form-clmn">
+                            <div className="frm-grp cntctfrm-grp">
+                                <div className="frm-titles">
                                     <h3 className="h4 frm-title">Send us an email</h3>
                                     <p>Drop us a line by using the below form</p>
-                                </Grid>
-                                {/* <Grid><FormGroup/></Grid> */}
+                                </div>
+                                {/* <div><FormGroup/></div> */}
 
                                 <form>
-                                    <Grid className=" row form-row" style={{ margin: '0px' }}>
-                                        <Grid className="form-group col-md-6" >
+                                    <div className=" row form-row" style={{ margin: '0px' }}>
+                                        <div className="form-group col-md-6" >
                                             {/* <label for="inputEmail4">Email</label>
       <input type="email" className="form-control" id="inputEmail4" placeholder="Email"/> */}
                                             <TextField id="outlined-basic" label="Name" variant="outlined" type='text' required color='secondary'  />
-                                            </Grid>
-                                           <Grid className='col-md-6'> <TextField id="outlined-basic" label="Email" variant="outlined" type='email' required color='secondary' />
-                                        </Grid>
-                                        <Grid className="form-group col-md-6">
+                                            </div>
+                                           <div className='col-md-6'> <TextField id="outlined-basic" label="Email" variant="outlined" type='email' required color='secondary' />
+                                        </div>
+                                        <div className="form-group col-md-6">
                                             {/* <label for="inputPassword4">Password</label>
       <input type="password" className="form-control" id="inputPassword4" placeholder="Password"/> */}
 
-                                        </Grid>
-                                    </Grid>
+                                        </div>
+                                    </div>
 
-                                    <Grid className="row form-row" >
-                                        <Grid className="form-group col-md-6" style={{ margin: '5px' }}>
+                                    <div className="row form-row" >
+                                        <div className="form-group col-md-6" style={{ margin: '5px' }}>
                                             {/* <label for="inputCity">City</label> */}
                                             {/* <input type="text" className="form-control" id="inputCity"/> */}
                                             <TextField id="outlined-basic" label="Location" variant="outlined" color='secondary'  />
-                                            </Grid>
-                                            <Grid>
+                                            </div>
+                                            <div>
                                             <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
 
-                                            </Grid>
-                                        </Grid>
-                                        <Grid className="form-group" style={{ margin: '5px' }}>
+                                            </div>
+                                        </div>
+                                        <div className="form-group" style={{ margin: '5px' }}>
                                             {/* <label for="inputAddress">Address</label> */}
                                             {/* <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/> */}
                                             <TextField id="outlined-basic" label="Address" variant="outlined" color='secondary' fullWidth />
-                                        </Grid>
+                                        </div>
 
-                                        {/* <Grid className="form-group col-md-4"> */}
+                                        {/* <div className="form-group col-md-4"> */}
                                         {/* <FormControl fullWidth>
   <InputLabel id="demo-simple-select-label">State</InputLabel>
   <Select
@@ -134,30 +134,30 @@ export default class ContactUs extends Component {
         <option selected>Choose...</option>
         <option>...</option>
       </select> */}
-                                        {/* </Grid> */}
+                                        {/* </div> */}
 
                                     
-                                    <Grid className="form-group">
-                                        <Grid className="form-check">
-                                            {/* <input className="form-check-input" type="checkbox" id="gridCheck"/> */}
-                                            {/* <label className="form-check-label" for="gridCheck"> */}
+                                    <div className="form-group">
+                                        <div className="form-check">
+                                            {/* <input className="form-check-input" type="checkbox" id="divCheck"/> */}
+                                            {/* <label className="form-check-label" for="divCheck"> */}
                                             <Checkbox label="Check me out" />
 
                                             {/* </label> */}
-                                        </Grid>
-                                    </Grid>
+                                        </div>
+                                    </div>
                                     {/* <button type="submit" className="btn btn-primary">Sign in</button> */}
                                     <Button variant="outlined" color="secondary" >Submit</Button>
                                 </form>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                    </Grid>
-                </Box>
-                <Grid style={{marginTop:'20px'}}><Footer /></Grid>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div style={{marginTop:'20px',boxSizing:"border-box"}}><Footer /></div>
 
-
-            </Box>
+                
+            </div>
             /* <!-- END - Contact Us Section --> */
 
         )
