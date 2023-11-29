@@ -29,7 +29,7 @@ export default class ContactUs extends Component {
 
             
                    <div className="section-2" style={{
-                    padding:"40px",background:"whitesmoke",boxSizing:"border-box"
+                    padding:"90px",background:"whitesmoke",boxSizing:"border-box"
                    }}>
                 <div className="container">
                 

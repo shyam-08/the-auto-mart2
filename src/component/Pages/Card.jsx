@@ -1,5 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+// import {rollsroys} from '.public\img\rollsroyce.png'
+// const img =require("src\component\Img\rollsroyce.png")
 // import Data from './Data'
 // import { motion } from "framer-motion"
 // const car = {
@@ -34,6 +36,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
  function Card () {
+  // const [cars, setCars] = useState/(require('.public\img\rollsroyce.png'));
   const Cars = [
 
 
@@ -42,7 +45,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
       title: "BMW",
       category: "Sedan",
       price: "100000",
-      img: "src\component\img\rangerover-vogue-white-mumbai-01-17.jpg",
+      img:"public\img\rollsroyce.png",
+
+      // img: require("component\Img\Ford-Logo.webp"),
       desc: "Very Fresh Car "
     },
     {
@@ -50,30 +55,32 @@ import 'bootstrap/dist/css/bootstrap.min.css'
       title: "Audi A6",
       category: "sedan",
       price: "140000",
-      img: "src\component\img\rangerover-vogue-white-mumbai-01-17.jpg",
+      img:"public\img\rollsroyce.png",
       desc: "Very Fresh Car"
     }
   ]  
-
+  // var require/
   return (
 
     <div className='container'>
       <div className="row  justify-content-centre">
-        {Cars.map((card) => (
-          <div key={card.id} className='col-md-4 col-sm-6 card my-3 border-1'>
+        {Cars.map((card) => {
+          const {id,title,image,desc,price,category} = elem;
+          <div key={id} className='col-md-4 col-sm-6 card my-3 border-1'>
             <div className='card-img-top text-centre'>
-              <img src={card.img} alt="img" className='w-75' />
+              <img src={img} alt="img" className='w-75' />
             </div>
             <div className="card-body fw-bold fs-4">
-              <div className='card-title'>{card.title}--{card.price}
+              <div className='card-title'>{title}--{price}
               </div>
               <div className='card-text'>
-                {card.desc}
+                {desc}
               </div>
-              Cars.forEach((person) ={console.log(val.name)} )
             </div>
+            {/* Cars.forEach((person) ={console.log(Card.name)} ) */}
+
           </div>
-        ))}
+ })}
       </div>
     </div>
 

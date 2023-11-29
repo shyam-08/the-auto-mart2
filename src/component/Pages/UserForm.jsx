@@ -17,7 +17,7 @@ import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 
 const defaultTheme = createTheme();
 
-export default function UserFom() {
+export default function UserForm() {
   const [data, setData] = useState({
     username: "",
     email: "",

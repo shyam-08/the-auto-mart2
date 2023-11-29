@@ -34,6 +34,8 @@ import InsuranceTab from './component/Pages/InsuranceTab'
 import MultipleSelectPlaceholder from './component/Pages/MultipleSelectPlaceholder'
 import ParallaxCarousel from './component/Pages/ParallaxCarousel';
 import { Navigate } from "react-router-dom";
+import ResponsiveAppBar from './component/Pages/ResponsiveAppBar';
+import UserForm from './component/Pages/UserForm';
 
 
 function App() {
@@ -72,6 +74,9 @@ function App() {
           <Route path='/EmiCalculator' element={ <EmiCalculator/>} />
           <Route path='/SaleCar' element={<SaleCar/>} />
           <Route path='/CompareCars' element={<CompareCars/>} />
+          <Route path='/card' element={<Card/>} />
+          <Route path='/responsive' element={<ResponsiveAppBar/>} />
+          <Route path='/userform' element={<UserForm/>} />
 
         </Routes>
      </BrowserRouter>   

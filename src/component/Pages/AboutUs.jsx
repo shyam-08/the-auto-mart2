@@ -36,31 +36,33 @@ export default function AboutUs() {
       <div className='Section-3' style={{boxSizing:"border-box"}} >
         <div className="container">
           <h2 style={{ padding: '20px 0 0 ' }}>OUR USPS</h2>
-          <div className='row' >
+          <ul className='row' style={{ listStyle: "none", display: "flex", flexWrap: "wrap"}}>
 
-            <div className='col-md-6 col-sm-12' style={{ alignItems: 'center', textAlign: 'centre', padding: '10px 0 60px ' }}>
+            <li className='col-md-6 col-sm-12' style={{ alignItems: 'center', textAlign: 'centre', padding: '10px 0 60px ' }}>
 
               <img src="src\component\img\customer3.jpg" style={{ alignItems: 'center', padding: '5px  40px 10px', height: '90%', width: '90%' }} />
               <h3 style={{ width: '70%', textAlign: 'center' }}> 7600+ Happy Customers</h3>
               <p style={{ width: '70%', textAlign: 'center' }}>At TAM, we offer you comparisons across various parameters thereby helping you choose the ideal one.</p>
-            </div>
-            <div className='col-md-6 col-sm-12' style={{ alignItems: 'center', textAlign: 'centre', padding: '10px 0 60px ' }}>  <img src="src\component\img\customer2.jpg" style={{ alignItems: 'center', padding: '5px  40px 10px', height: '90%', width: '90%', fontfamily: 'Barlow, arial' }} />
+            </li>
+            <li className='col-md-6 col-sm-12' style={{ alignItems: 'center', textAlign: 'centre', padding: '10px 0 60px ' }}>  <img src="src\component\img\customer2.jpg" style={{ alignItems: 'center', padding: '5px  40px 10px', height: '90%', width: '90%', fontfamily: 'Barlow, arial' }} />
               <h3 style={{ width: '70%', textAlign: 'center' }}>Jaipur&#39;s Biggest Studio</h3>
               <p style={{ width: '80%', textAlign: 'center' }}>At The Auto Mart, we offer you comparisons across various parameters thereby helping you choose the ideal one.</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div className='Section-4' style={{ backgroundColor: '#F2F2F2' ,boxSizing:"border-box"}}>
         <div className='contaiener'>
-          <div className='row' >
-            <div className='col-md-6 col-sm-12' style={{ textAlign: 'center' }}>
+          <ul className='row' style={{ listStyle: "none", display: "flex", flexWrap: "wrap"}} >
+            <li className='col-md-6 col-sm-12' style={{ textAlign: 'center' }}>
               <img src="src\component\img\kothi.jpg" alt='kothi-Image' style={{ height: '400px', width: '650px', padding: '20px' }} />
-            </div>
-            <div className='col-md-6 col-sm-12' style={{ padding: '90px 10px 10px', fontfamily: 'Barlow, arial', textAlign: 'center', width: '40%', borderRadius: '50px',justifyContent:"space-evenly" }}> <h3>THE AUTO MART SHOWROOM</h3>
+            </li>
+            <li className='col-md-6 col-sm-12' style={{ padding: '90px 10px 10px', fontfamily: 'Barlow, arial', textAlign: 'center',
+            //  width: '40%', 
+             borderRadius: '50px',justifyContent:"space-evenly" }}> <h3>THE AUTO MART SHOWROOM</h3>
               <p>At The Auto Mart the aim has always been to dream big and achieve great. Welcome to our showroom tour. Hope that you will enjoy your time cruising through. A little warning before you scroll ahead You can check out anytime you want but you can never&quot; leave</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
       <Footer />

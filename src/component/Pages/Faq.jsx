@@ -84,8 +84,11 @@ export default class Faq extends Component {
             <h2>YOU STILL HAVE A QUESTION?</h2>
             <p>If you connot find answer to your question in our FAQ, you can always contact us.
               We will answer to you shortly!</p>
-            <div className='row'>
-              <div className='col-sm-12 col-md-5' 
+            <ul 
+            // className='row'
+             style={{ listStyle: "none", display: "flex", flexWrap: "wrap"}} >
+              <li 
+              // className='col-sm-12 col-md-5' 
                 style={{
                   border: "1px solid black",
                   borderRadius: "10px",
@@ -98,8 +101,9 @@ export default class Faq extends Component {
                 <img src="src\component\img\mobile.png" alt=" mobile" style={{ padding: "10px" }} />
                 <h6>8742068501</h6>
                 <p>We are always happy to help</p>
-              </div>
-              <div className='col-sm-12 col-md-5' 
+              </li>
+              <li 
+              // className='col-sm-12 col-md-5' 
               style={{
                 border: "1px solid black",
                 borderRadius: "10px", padding: "30px",
@@ -112,8 +116,8 @@ export default class Faq extends Component {
                 <p>The best way to get ansawer faster.</p>
 
 
-              </div>
-            </div>
+              </li>
+            </ul>
 
           </div>
 

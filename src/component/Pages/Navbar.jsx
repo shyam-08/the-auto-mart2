@@ -9,8 +9,8 @@ export default class Navbar extends Component {
 
 
     const requestACall = () => {
-      alert(<><UserForm /></>);
-      <UserForm />
+      alert(Navigate({to:'userform'}));
+      // <UserForm />
     }
 
     return (
@@ -39,7 +39,7 @@ export default class Navbar extends Component {
             </button>
 
             {/* <!-- Collapsible wrapper --> */}
-            <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ paddingLeft: "100px" }}>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{placeItems:"flex-end"}}>
               {/* <!-- Left links --> */}
               <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{ textAlign: "center" }}>
                 <li className="nav-item">
@@ -74,12 +74,12 @@ export default class Navbar extends Component {
                   </Link>
 
                   <ul className="dropdown-menu" style={{flexWrap:'wrap', padding:"10px"}}>
-                    <li><a className="dropdown-item" href="/">
+                    <li><Link className="dropdown-item" to="/">
                       <img src="src\component\Img\nav-home-icon.png" alt=""  style={{height:"40px",width:"40px",padding:"5px",margin:"5px"}}/>
-                      Home</a></li>
-                    <li><a className="dropdown-item" to="/UsedCar">
+                      Home</Link></li>
+                    <li><Link className="dropdown-item" to="/UsedCar">
                       <img src="src\component\img\nav-usedcar-.png" alt="" style={{height:"40px",width:"40px",padding:"5px",margin:"5px"}}/>
-                      Used Car</a></li>
+                      Used Car</Link></li>
                     <li><Link className="dropdown-item" to="/SaleCar">
                       <img src="src\component\img\nav-sellcar-icon.png" alt=""style={{height:"40px",width:"40px",padding:"5px",margin:"5px" ,}} />
                       Sale Car</Link></li>
@@ -128,9 +128,10 @@ export default class Navbar extends Component {
                 <li className="nav-item">
                   <a className="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
+                <button onClick={requestACall}>Request a Call </button>
               </ul>
               
-              <button onClick={requestACall}>Request a Call </button>
+              
             
 
               {/* <!-- Left links --> */}

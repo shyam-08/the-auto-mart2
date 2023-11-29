@@ -174,11 +174,11 @@ const EmiCalculator = () => {
   };
 
   return (
-    <Box>
+    <div>
       <div>
         <Navbar />
       </div>
-      <div className=" Container emical" style={{ padding: "20px", margin: "20px 50px" }}>
+      <div className=" Container emical" style={{ padding: "50px", margin: "20px 50px" }}>
         <h3 className="title" style={{ textAlign: "center" }}>Emi Calculator</h3>
         <h6 className="subTitle">Total cost of Asset</h6>
         <input
@@ -242,7 +242,7 @@ const EmiCalculator = () => {
           <Footer />
         </div>
       </div>
-    </Box>
+    </div>
   );
 };
 

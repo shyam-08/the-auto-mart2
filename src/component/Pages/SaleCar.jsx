@@ -13,8 +13,8 @@ import { Select } from '@mui/material';
 import { FormControl } from '@mui/material';
 import InputFileUpload from './InputFileUpload';
 import InputFileUpload2 from './InputFileUpload2';
-
-
+import PhoneIcon from '@mui/icons-material/Phone';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default class SaleCar extends Component {
   render() {
@@ -24,7 +24,7 @@ export default class SaleCar extends Component {
           <div className="container-fluid">
             <Navbar />
             <div className="row SaleCar1" >
-              <div className="col-md-5 col-sm-12" style={{ alignContent: 'center', padding: "20px" }}>
+              <div className="col-md-5 col-sm-12" style={{ alignContent: 'center', padding: "40px" }}>
                 <h3>SELL YOUR LUXURY CAR</h3>
                 <h3 style={{ color: 'transparent !important', webkittextstrokewidth: '1px', webkittextstrokecolor: '#000' }}>WITHIN 29 MINUTES IN</h3>
                 <h3>3 EASY STEPS.</h3>
@@ -33,14 +33,16 @@ export default class SaleCar extends Component {
                 }}>
                   <li className='sale litxtt'>
                     <span className='icon checkpoint' >
-                      <img src="" alt="" />
+                      <img src="src\component\Img\151checkpoints-icon.png" alt="" className='Section-5Squad-Icon'/>
                     </span>
+                    <span>
                     <h5>151 <strong>Check Point</strong></h5>
+                    </span>
 
                   </li>
                   <li className='sale litxtt'>
                     <span className='icon checkpoint' >
-                      <img src="" alt="" />
+                      <img src="src\component\Img\clock-icon.png" alt="" className='Section-5Squad-Icon' />
 
                     </span>
                     <h5>Get Offer  <strong>in 29 Minutes</strong></h5>
@@ -48,24 +50,24 @@ export default class SaleCar extends Component {
                   </li>
                   <li className='sale litxtt' style={{ font: '18px' }}>
                     <span className='icon checkpoint' >
-                      <img src="" alt="" />
+                      <img src="src\component\Img\men-icon.png" alt=""  className='Section-5Squad-Icon'/>
 
                     </span>
                     <h5>2000+  <strong>Satisfied Customers</strong></h5>
 
                   </li>
                 </ul>
-                <Button variant="contained" color="success" >
+                <Button variant="contained" color="success" startIcon={<WhatsAppIcon />} sx={{ m: 1 }}>
                   Chat on Whatsapp
                 </Button>
                 {/* <button style={{ margin: "5px" }}> </button> */}
-                <Button variant="contained" color="success" >
+                <Button variant="contained" color="success" startIcon={<PhoneIcon />} >
                   Call Now:8742068501
                 </Button>
                 {/* <button>Call Now:8742068501</button> */}
               </div>
-              <div className="col-md-7 col-sm-12 Sec1-sale" style={{ paddingLeft: '10px' }}>
-                <img src="src\component\img\sellyourcar-banner-imgbg.jpg" alt="" style={{ height: "auto", width: "100%", position: "absolute" }} />
+              <div className="col-md-7 col-sm-12 Sec1-sale" style={{ paddingLeft: '10px', paddingTop: "100px" }}>
+                {/* <img src="src\component\img\sellyourcar-banner-imgbg.jpg" alt="" style={{ height: "500px", width: "900px", position: "absolute" }} /> */}
                 <img src="src\component\img\sellyourcar-banner-img.png" alt="Car image" style={{ height: "auto", width: "100%", position: "relative" }} />
 
               </div>
@@ -81,8 +83,7 @@ export default class SaleCar extends Component {
                 padding: "20px"
               }}>
                 <ul style={{
-                  listStyle: "none", textAlign:
-                    "left"
+                  listStyle: "none", textAlign: "left", flexWrap: "wrap"
                 }}>
                   <li>
 
@@ -175,7 +176,7 @@ export default class SaleCar extends Component {
                     <div className="row form-row" >
                       <div className="form-group col-md-5 col-sm-6" style={{ margin: '5px' }}>
 
-                        <TextField id="outlined-basic" label="Location" variant="outlined"  required color='secondary' fullWidth />
+                        <TextField id="outlined-basic" label="Location" variant="outlined" required color='secondary' fullWidth />
                       </div>
                       <div className="form-group col-md-5 col-sm-6">
                         <TextField id="outlined-basic" label="Number" variant="outlined" type='Number' required color='secondary' style={{ margin: '5px' }} />
@@ -195,7 +196,7 @@ export default class SaleCar extends Component {
                     <div className="row form-row" >
                       <div className="form-group col-md-5 col-sm-6" style={{ margin: '5px' }}>
 
-                        <TextField id="outlined-basic" label="Resigtration No." variant="outlined" type='Number' color='secondary'  required />
+                        <TextField id="outlined-basic" label="Resigtration No." variant="outlined" type='Number' color='secondary' required />
                       </div>
                       <div className="form-group col-md-5 col-sm-6">
                         <TextField id="outlined-basic" label="Registration Type" variant="outlined" type='text' required color='secondary' style={{ margin: '5px' }} />
@@ -250,9 +251,9 @@ export default class SaleCar extends Component {
                         {/* </label> */}
                       </div>
                     </div>
-                   <InputFileUpload/>
-                   <InputFileUpload2/>
-                   <hr/>
+                    <InputFileUpload />
+                    <InputFileUpload2 />
+                    <hr />
                     {/* <button type="submit" className="btn btn-primary">Sign in</button> */}
                     <Button variant="outlined" color="secondary" >Submit</Button>
                   </form>
@@ -265,7 +266,7 @@ export default class SaleCar extends Component {
         <div className="Section-3Sale">
           <div className="container">
             <h2>OTHER BRANDS</h2>
-            <ui style={{ listStyle: "none", display: "flex" }}>
+            <ui style={{ listStyle: "none", display: "flex", flexWrap: "wrap",textAlign:'center'}}>
               <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\Lamborghini-logo.webp" alt="Lamborgini" className='logo' />
@@ -316,8 +317,8 @@ export default class SaleCar extends Component {
               </li>
 
 
-            </ui>
-            <ui style={{ listStyle: "none", display: "flex",   liststyletype: 'circle'}}>
+              {/* </ui> */}
+              {/* <ui style={{ listStyle: "none", display: "flex",   liststyletype: 'circle', flexWrap:"wrap"}}> */}
               <li >
                 <a href="#" className='a-3Sale'>
                   <img src="src\component\img\nissan-icon.png" alt="Lamborgini" className='logo' />
@@ -377,29 +378,41 @@ export default class SaleCar extends Component {
             <h2>TAM MANDATE CHECK FOR PURCHASING USED CAR</h2>
             <div  >
 
-              <div className="row " style={{ padding: "20px" }}>
+              <ul 
+              // className="row " 
+              style={{
+                //  padding: "20px",
+               listStyle: 'none', display: "flex", flexWrap: 'wrap',boxSizing:'border-box',paddingBottom:"5px",padding:'10px' }}>
 
-                <div className="col-md-3 Mandate-Check-Sale">
+                <li
+                  className="col-sm-3  
+                Mandate-Check-Sale">
                   <span><img src="src\component\img\benefit-offer-icon.png" alt="" className='Section-5Squad-Icon' /></span>
 
                   <h6>
                     No Accidental History</h6>
-                </div>
-                <div className="col-md-3 Mandate-Check-Sale">
+                </li>
+                <li
+                  className=" col-sm-3 
+                Mandate-Check-Sale">
                   <img src="src\component\img\benefit-pay-icon.png" alt="" className='Section-5Squad-Icon' />
                   <h6>
 
 
                     No litigations
                   </h6>
-                </div>
-                <div className="col-md-3 Mandate-Check-Sale ">
+                </li>
+                <li
+                  className=" col-sm-3 
+                Mandate-Check-Sale ">
                   <img src="src\component\img\benefit-workfreedom-icon.png" alt="" className='Section-5Squad-Icon' />
                   <h6>
                     No Odometer Tampering
                   </h6>
-                </div>
-                <div className="col-md-3 Mandate-Check-Sale">
+                </li>
+                <li
+                  className=" col-sm-3 
+                Mandate-Check-Sale">
                   <img src="src\component\img\benefit-timing-icon.png" alt="" className='Section-5Squad-Icon' />
                   <h6>
 
@@ -407,19 +420,23 @@ export default class SaleCar extends Component {
                     National Crime Record
                     Check
                   </h6>
-                </div>
+                </li>
 
-              </div>
-              <div className="row" style={{ padding: "20px" }}>
 
-                <div className="col-md-3 Mandate-Check-Sale">
+                {/* <div className="row" style={{ padding: "20px" }}> */}
+
+                <li
+                  className=" col-sm-3 
+                Mandate-Check-Sale">
                   <img src="src\component\img\benefit-communication-icon.png" alt="" className='Section-5Squad-Icon' />
                   <h6>
                     Model 2015 & above & KMS driven
                     less than 30,000 only.
                   </h6>
-                </div>
-                <div className="col-md-3 Mandate-Check-Sale" >
+                </li>
+                <li
+                  className="col-sm-3 
+                Mandate-Check-Sale" >
                   <img src="src\component\img\benefit-reach-icon.png" alt="" className='Section-5Squad-Icon' />
                   <h6>
 
@@ -427,74 +444,80 @@ export default class SaleCar extends Component {
                     Service History
                     Check
                   </h6>
-                </div>
-                <div className="col-md-3 Mandate-Check-Sale" >
+                </li>
+                <li
+                  className=" col-sm-3 
+                Mandate-Check-Sale" >
                   <img src="src\component\img\benefit-scale-icon.png" alt="" className='Section-5Squad-Icon' />
                   <h6>
                     Insurance History
                     Check
 
                   </h6>
-                </div>
-                <div className="col-md-3 Mandate-Check-Sale" >
+                </li>
+                <li
+                  className=" col-sm-3 
+                Mandate-Check-Sale" >
                   <img src="src\component\img\benefit-automobilegrowth-icon.png" alt="" className='Section-5Squad-Icon' />
                   <h6>
 
                     Physical Evaluation
                   </h6>
 
-                </div>
-              </div>
+                </li>
+              </ul>
+              {/* </div> */}
             </div>
-            <Button variant="contained" color="success">
+            <Button variant="contained" color="success" sx={{ m: 1 }}>
               Chat on Whatsapp
             </Button>
             {/* <button style={{ margin: "5px" }}> </button> */}
-            <Button variant="contained" color="success">
+            <Button variant="contained" color="success" sx={{ m: 1 }}>
               Call Now:8742068501
             </Button>
+            {/* </ul> */}
           </div>
         </div>
         <div className="Section-5Sale">
           <div className="container">
             <h2 style={{ color: "whitesmoke", padding: "10px" }}>HOW TO SELL YOUR USED CARS</h2>
             <p style={{ color: "grey", padding: "10px" }}>At TAM, we strive to provide the quickest and most hassle free car selling service available. Getting a great deal on your vehicle can often be tricky, that’s why at The Auto Mart we’ll value your vehicle based on its condition and current market value.</p>
-            <div className="row">
-              <div className="col-md-4">
+            <ul className="row" style={{display:"flex",flexWrap:"wrap",flexGrow:"-moz-initial",listStyle:'none'}}>
+              <li className="col-md-4">
                 <img src="src\component\img\sellcar-instantvaluation-img.png" alt="instant valuation" />
                 <h6 style={{ color: "grey" }}>Instant Valuation</h6>
-              </div>
-              <div className="col-md-4">
+              </li>
+              <li className="col-md-4">
                 <img src="src\component\img\sellcar-bookappointment-img.png" alt="appointment" />
                 <h6 style={{ color: "grey" }}>Book An Apppointment</h6>
-              </div>
-              <div className="col-md-4">
+              </li>
+              <li className="col-md-4">
                 <img src="src\component\img\sellcar-sllyrcarmeeting-img.png" alt="sell car" />
                 <h6 style={{ color: "grey" }}>Sell Your Car</h6>
-              </div>
+              </li>
 
-            </div>
+            </ul>
             <hr style={{ color: "grey" }} />
           </div>
         </div>
         <div className="Section-6Sale">
           <div className="container">
-            
-              <img src="src\component\img\outrightsale-icon.png" alt="" className='Section-6Sale-Img' />
-              <h6><strong>OUTRIGHT SALE</strong></h6>
-              <h6><strong>(NOT ONLY EXCHANGE)</strong></h6>
-              <p>Sell you cars with us without the boundation of exchange only offers.</p>
-              <img src="src\component\img\bestofferin29mins-icon.png" alt="" className='Section-6Sale-Img' />
-              <h6><strong>BEST OFFER IN 29MINS</strong></h6>
-              <p>Get the best offer of your super car in 29mins post physical/virtual valuation.</p>
-              <span><img src="src\component\img\onspot-icon.png" alt="" className='Section-6Sale-Img' /></span>
-              <h6><strong>ON SPOT</strong></h6>
-              <p>Easy and quick on the spot payment method when you sell/exchange your cars with us.</p>
-              <div> <img src="src\component\img\confidentialityofseller-icon.png" alt="" className='Section-6Sale-Img' /></div>
-              <h6><strong>CONFIDENTIALITY
-                OF SELLER.</strong></h6>
-              <p>All your personal details are safe with us and is not passed on to the new buyers.</p>
-           
+
+            <img src="src\component\img\outrightsale-icon.png" alt="" className='Section-6Sale-Img' />
+            <h6><strong>OUTRIGHT SALE</strong></h6>
+            <h6><strong>(NOT ONLY EXCHANGE)</strong></h6>
+            <p>Sell you cars with us without the boundation of exchange only offers.</p>
+            <img src="src\component\img\bestofferin29mins-icon.png" alt="" className='Section-6Sale-Img' />
+            <h6><strong>BEST OFFER IN 29MINS</strong></h6>
+            <p>Get the best offer of your super car in 29mins post physical/virtual valuation.</p>
+            <span><img src="src\component\img\onspot-icon.png" alt="" className='Section-6Sale-Img' /></span>
+            <h6><strong>ON SPOT</strong></h6>
+            <p>Easy and quick on the spot payment method when you sell/exchange your cars with us.</p>
+            <div> <img src="src\component\img\confidentialityofseller-icon.png" alt="" className='Section-6Sale-Img' /></div>
+            <h6><strong>CONFIDENTIALITY
+              OF SELLER.</strong></h6>
+            <p>All your personal details are safe with us and is not passed on to the new buyers.</p>
+
 
           </div>
         </div>
@@ -503,7 +526,7 @@ export default class SaleCar extends Component {
             <Footer />
           </div>
         </div>
-      </div>
+      </div >
     )
   }
 }

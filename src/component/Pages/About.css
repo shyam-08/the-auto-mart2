@@ -1,6 +1,6 @@
 .aboutUS-bgimage {
     background: url("src\component\Img\pexels.jpeg");
-    height: auto;
+    height: 100%;
     max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,6 +61,14 @@
     width: 200;
 }
      } */
+     @media only screen and (max-width: 600px) {
+    #headerimg{
+height: '100px';
+width:'200px'
+    }
+
+
+     }
 .section-2Home{
     padding: 100px;
 }
@@ -189,6 +197,7 @@ background-image: "src\component\img\sellyourcar-banner-imgbg.jpg";
 .Mandate-Check-Sale{
     padding: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 /* insurance page  */
 .head-text {
@@ -198,7 +207,7 @@ background-image: "src\component\img\sellyourcar-banner-imgbg.jpg";
     position: absolute;
     /* right: 90%; */
     left: 10%;
-    bottom: 15%;
+    bottom: 10%;
     color: whitesmoke;
   }
 .Section-3Insurance{

@@ -33,38 +33,38 @@ export default class Insurance extends Component {
             <p>At The Auto Mart, we bring to you a private car package policy that adds convenience and balance to your car coverage.</p>
             <ul style={{ padding: "20px", display: "flex", listStyle: "none", flexWrap:"wrap"}}>
 
-              <li style={{ padding: "40px" }} >
-                <span><img src="src\component\img\assured-list-icon-1.png" alt="" style={{ margin: "2px" }} /></span>
+              <li style={{ padding: "30px" }} >
+                <span><img src="src\component\img\assured-list-icon-1.png" alt="" style={{ margin: "1px" }} /></span>
 
                 <h6>Renewal
                   Discounts</h6>
               </li>
-              <li style={{ padding: "40px" }} >
-                <img src="src\component\img\assured-list-icon-2.png" alt="" style={{ margin: "2px" }} />
+              <li style={{ padding: "30px" }} >
+                <img src="src\component\img\assured-list-icon-2.png" alt="" style={{ margin: "1px" }} />
                 <h6>
 
                   Accidental
                   Cover
                 </h6>
               </li>
-              <li style={{ padding: "40px" }}>
-                <img src="src\component\img\assured-list-icon-3.png" alt="" style={{ margin: "2px" }} />
+              <li style={{ padding: "30px" }}>
+                <img src="src\component\img\assured-list-icon-3.png" alt="" style={{ margin: "1px" }} />
                 <h6>
 
                   Depreciation
                   Cover
                 </h6>
               </li>
-              <li style={{ padding: "40px" }}>
-                <img src="src\component\img\assured-list-icon-4.png" alt="" style={{ margin: "2px" }} />
+              <li style={{ padding: "30px" }}>
+                <img src="src\component\img\assured-list-icon-4.png" alt="" style={{ margin: "1px" }} />
                 <h6>
 
                   Third Party
                   Cover
                 </h6>
               </li>
-              <li style={{ padding: "40px" }}>
-                <img src="src\component\img\assured-list-icon-5.png" alt="" style={{ margin: "2px" }} />
+              <li style={{ padding: "30px" }}>
+                <img src="src\component\img\assured-list-icon-5.png" alt="" style={{ margin: "1px" }} />
                 <h6>
 
                   Personal Accident
